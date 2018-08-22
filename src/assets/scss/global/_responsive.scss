@@ -1,31 +1,81 @@
-@include breakpoint(small only) {
-  // Home page
-}
-
-@include breakpoint(medium down) {
-  // Home page
-}
-
 @include breakpoint(medium) {
   // Home page
+  .copyright-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 @include breakpoint(large) {
   // Home page
+  .infoblock-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .navigation-menu {
+    li {
+      flex-grow: 1;
+    }
+  }
 }
 
-@include breakpoint(1200px) {
+@include breakpoint(xlarge) {
   // Home page
+  .navigation-menu {
+    li {
+      flex-basis: rem-calc(190);
+    }
+  }
 }
 
 @include breakpoint(1280px) {
   // Home page
 }
 
-@include breakpoint(xlarge) {
+@include breakpoint(xxlarge) {
   // Home page
 }
 
-@include breakpoint(xxlarge) {
+@include breakpoint(medium down) {
+  // Home page
+  .navigation {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in, max-height 0.4s ease-in;
+    .menu {
+      li {
+        opacity: 0;
+        transition: opacity 0.4s ease-in 0.2s;
+      }
+    }
+    &.shown {
+      overflow: auto;
+      max-height: rem-calc(400);
+      opacity: 1;
+      transition: opacity 0.6s ease-out, max-height 0.6s ease-out;
+      .menu {
+        li {
+          opacity: 1;
+          transition: opacity 0.3s ease-out 0.1s;
+        }
+      }
+    }
+  }
+  .picture-container {
+    img {
+      &.to-right {
+        position: static;
+        right: auto;
+        min-width: auto;
+        min-height: auto;
+        width: 100%;
+        transform: translate(0);
+      }
+    }
+  }
+}
+
+@include breakpoint(small only) {
   // Home page
 }

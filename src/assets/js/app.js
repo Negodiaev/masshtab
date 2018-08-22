@@ -29,12 +29,12 @@ var injectorOptions = {
   pngFallback: 'assets/png'
 };
 
-var afterAllInjectionsFinishedCallback = function (totalSVGsInjected) {
+var afterAllInjectionsFinishedCallback = function(totalSVGsInjected) {
   // Callback after all SVGs are injected
   console.log('We injected ' + totalSVGsInjected + ' SVG(s)!');
 };
 
-var perInjectionCallback = function (svg) {
+var perInjectionCallback = function(svg) {
   // Callback after each SVG is injected
   console.log('SVG injected: ' + svg);
 };
@@ -43,46 +43,46 @@ var perInjectionCallback = function (svg) {
 var injector = new libs.svgInjector(injectorOptions);
 
 // Trigger the injection
-injector.inject(
-  mySVGsToInject,
-  afterAllInjectionsFinishedCallback,
-  perInjectionCallback
-);
+injector.inject(mySVGsToInject, afterAllInjectionsFinishedCallback, perInjectionCallback);
 
 // slick carousel
-$(".content-carousel").slick({
+$('.content-carousel').slick({
   // normal options...
   speed: 5000,
-	autoplay: true,
-	autoplaySpeed: 0,
-	cssEase: 'linear',
+  autoplay: true,
+  autoplaySpeed: 0,
+  cssEase: 'linear',
   slidesToShow: 5,
-	slidesToScroll: 1,
+  slidesToScroll: 1,
   infinite: true,
   swipeToSlide: true,
-	centerMode: true,
+  centerMode: true,
   focusOnSelect: true,
   // the magic
-  responsive: [{
+  responsive: [
+    {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
         infinite: true
       }
-    }, {
+    },
+    {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
         dots: true
       }
-    }, {
+    },
+    {
       breakpoint: 300,
-      settings: "unslick" // destroys slick
-    }]
+      settings: 'unslick' // destroys slick
+    }
+  ]
 });
 
 // tablesaw table plugin
-$(function () {
+$(function() {
   $(document)
     .foundation()
     .trigger('enhance.tablesaw');
@@ -95,5 +95,32 @@ var TablesawConfig = {
 // app dashboard toggle
 $('[data-app-dashboard-toggle-shrink]').on('click', function(e) {
   e.preventDefault();
-  $(this).parents('.app-dashboard').toggleClass('shrink-medium').toggleClass('shrink-large');
+  $(this)
+    .parents('.app-dashboard')
+    .toggleClass('shrink-medium')
+    .toggleClass('shrink-large');
+});
+
+document.addEventListener('DOMContentLoaded', function(event) {
+  // search menu toggle
+  $('.navigation-toggle').on('click', function(e) {
+    e.preventDefault();
+
+    var navigation = $('.navigation');
+
+    if (navigation) navigation.toggleClass('shown');
+  });
+
+  // hero slider
+  var heroSwiper = new Swiper('#hero-slider', {
+    loop: true,
+    autoHeight: true,
+    lazy: {
+      loadPrevNext: true
+    },
+    // effect: 'fade',
+    fadeEffect: {
+      // crossFade: true
+    }
+  });
 });

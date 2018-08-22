@@ -77,9 +77,13 @@
 @import 'global/layout';
 
 // custom components
-@import 'components/navigation/main-nav';
+@import 'components/buttons';
+@import 'components/navigation';
 
+@import 'components/header';
 @import 'components/footer';
+
+@import 'components/goods';
 
 // media queries
 @import 'global/responsive';

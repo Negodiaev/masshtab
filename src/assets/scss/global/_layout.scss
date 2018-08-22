@@ -1,0 +1,36 @@
+.picture-container,
+.picture-container-content {
+  position: relative;
+}
+.picture-container {
+  overflow: hidden;
+  & > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: none;
+    transform: translate(-50%, -50%);
+    &.to-right {
+      left: auto;
+      right: 0;
+      min-width: auto;
+      transform: translate(0, -50%);
+    }
+  }
+}
+.picture-container-content {
+  z-index: 2;
+}
+.card-picture,
+.card-info {
+  position: relative;
+}
+.card-picture {
+  text-align: center;
+}
+.card-info {
+  z-index: 2;
+}

@@ -1,0 +1,27 @@
+.goods-card {
+  border-bottom: 7px solid #314aac;
+  color: #101f58;
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  &:hover,
+  &:focus {
+    border-bottom: 7px solid #4891ea;
+    color: $white;
+    background-color: $primary-color;
+    .goods-picture {
+      opacity: 0;
+      &.shadow {
+        opacity: 1;
+      }
+    }
+  }
+}
+.goods-picture {
+  transition: opacity 0.2s ease-in-out;
+  &.shadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -71,8 +71,8 @@ $global-font-size: 100%;
 $global-width: rem-calc(1260);
 $global-lineheight: 1.5;
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
+  primary: #203893,
+  secondary: #ed1c24,
   success: #3adb76,
   warning: #ffae00,
   alert: #cc4b37
@@ -81,7 +81,7 @@ $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
-$white: #fefefe;
+$white: #fff;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -411,7 +411,6 @@ $form-label-color: $black;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.8;
-
 $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
