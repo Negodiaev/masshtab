@@ -1,0 +1,82 @@
+// for pixelperfect
+.chromeperfectpixel-portal img.chromeperfectpixel-overlay {
+  display: block !important;
+}
+
+::selection {
+  background-color: rgba($primary-color, 0.8);
+}
+
+html,
+body,
+.off-canvas-wrapper,
+.off-canvas-content {
+  height: 100%;
+}
+
+.off-canvas-wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  min-width: 320px;
+}
+
+.off-canvas {
+  &.is-open {
+    & ~ .off-canvas-content {
+      .burger {
+        i {
+          &:first-child {
+            transform: translateY(8px) rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.sticky-footer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  & > .main {
+    flex: 1 0 auto;
+  }
+}
+
+// hide the sprite
+.sprite-container {
+  position: absolute;
+  bottom: -8000px;
+  overflow: hidden;
+  height: 0;
+}
+
+a,
+button {
+  outline: 0;
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
+a {
+  line-height: 1;
+  border-bottom: 1px solid $anchor-color;
+  &:hover,
+  &:focus {
+    border-bottom-color: transparent;
+  }
+}
+
+svg {
+  display: inline-block;
+  vertical-align: middle;
+  fill: currentColor;
+}
