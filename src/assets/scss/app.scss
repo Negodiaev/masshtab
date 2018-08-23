@@ -75,6 +75,7 @@
 @import 'global/fonts';
 @import 'global/base';
 @import 'global/layout';
+@import 'global/typography';
 
 // custom components
 @import 'components/buttons';
@@ -83,6 +84,7 @@
 @import 'components/header';
 @import 'components/footer';
 
+@import 'components/hero';
 @import 'components/goods';
 
 // media queries

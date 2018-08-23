@@ -1,6 +1,6 @@
 .goods-card {
   border-bottom: 7px solid #314aac;
-  color: #101f58;
+  color: get-color(primary-dark);
   transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
   &:hover,
   &:focus {

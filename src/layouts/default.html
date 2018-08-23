@@ -2,26 +2,26 @@
 
 <!doctype html>
 <html class="no-js" lang="ru">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{meta-title}} | Масштаб</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" media="all and (min-width: 960px)">
-    <link rel="stylesheet" href="{{root}}assets/css/app.css">
-  </head>
-  <body class="{{page}} {{layout}}">
 
-    <div class="sticky-footer">      
-      <main class="main">
-        {{> header}} {{> body}} {{> footer}}
-      </main>
-      <!-- /.main -->
-    </div>
-    <!-- /.sticky-footer -->
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{meta-title}} | Масштаб</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" media="all and (min-width: 960px)">
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
 
-    <div class="sprite-container"> {{> sprite}} </div>
+<body class="{{page}} {{layout}}">
 
-    <script src="{{root}}assets/js/app.js"></script>
-  </body>
+  <div class="sticky-footer">
+    {{> header}} {{> body}} {{> footer}}
+  </div>
+  <!-- /.sticky-footer -->
+
+  <div class="sprite-container"> {{> sprite}} </div>
+
+  <script src="{{root}}assets/js/app.js"></script>
+</body>
+
 </html>

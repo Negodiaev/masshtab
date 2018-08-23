@@ -4,10 +4,17 @@
     display: flex;
     justify-content: flex-end;
   }
+  .hero-title {
+    font-size: rem-calc(30);
+  }
 }
 
 @include breakpoint(large) {
   // Home page
+  .header-content {
+    padding-top: 37px;
+    padding-bottom: 37px;
+  }
   .infoblock-wrapper {
     display: flex;
     justify-content: flex-end;
@@ -15,7 +22,19 @@
   .navigation-menu {
     li {
       flex-grow: 1;
+      &:first-child {
+        a {
+          border-left: 1px solid #2f47a6;
+        }
+      }
     }
+    a {
+      height: 100%;
+      border-right: 1px solid #2f47a6;
+    }
+  }
+  .hero-title {
+    font-size: rem-calc(38);
   }
 }
 
@@ -38,11 +57,29 @@
 
 @include breakpoint(medium down) {
   // Home page
+  .logo {
+    max-width: 124px;
+  }
+  .infoblock-content {
+    p {
+      margin-bottom: 0;
+    }
+  }
+  .header-phone-link {
+    color: $anchor-color-hover;
+    &:hover,
+    &:focus {
+      color: $anchor-color-hover;
+    }
+  }
+  .burger-wrapper {
+    line-height: 0;
+  }
   .navigation {
     overflow: hidden;
     max-height: 0;
     opacity: 0;
-    transition: opacity 0.4s ease-in, max-height 0.4s ease-in;
+    transition: padding 0.4s ease-in, opacity 0.4s ease-in, max-height 0.4s ease-in;
     .menu {
       li {
         opacity: 0;
@@ -51,15 +88,25 @@
     }
     &.shown {
       overflow: auto;
+      padding-top: 15px;
+      padding-bottom: 15px;
       max-height: rem-calc(400);
       opacity: 1;
-      transition: opacity 0.6s ease-out, max-height 0.6s ease-out;
+      transition: opacity 0.6s ease-out, max-height 0.6s ease-out, padding 0.1s;
       .menu {
         li {
           opacity: 1;
           transition: opacity 0.3s ease-out 0.1s;
         }
       }
+    }
+  }
+  .navigation-menu {
+    margin-left: -10px;
+    margin-right: -10px;
+    a {
+      padding-top: rem-calc(12);
+      padding-bottom: rem-calc(12);
     }
   }
   .picture-container {

@@ -1,4 +1,45 @@
 .header {
   color: $white;
   background-color: #162973;
+  a {
+    border: 0;
+  }
+}
+.header-content {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.infoblock-picture {
+  margin-right: rem-calc(18);
+  width: rem-calc(61);
+  height: rem-calc(61);
+  &.bordered {
+    border: 2px solid rgba($white, 0.17);
+  }
+}
+.infoblock-content {
+  font-size: rem-calc(18);
+  line-height: 1;
+}
+.infoblock-text {
+  margin-bottom: rem-calc(10);
+  line-height: 1;
+  font-weight: 600;
+}
+.phone-link {
+  border: 0;
+  line-height: 1;
+  color: $white;
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+}
+.infoblock-link {
+  font-size: rem-calc(14);
+  color: #41c8ff;
+  &:hover,
+  &:focus {
+    color: $anchor-color-hover;
+  }
 }

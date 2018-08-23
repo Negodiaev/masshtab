@@ -3,7 +3,15 @@
   background-color: $primary-color;
 }
 .navigation-menu {
+  li {
+    font-size: rem-calc(15);
+    font-weight: 600;
+  }
   a {
     color: $white;
+    &:hover,
+    &:focus {
+      background-color: #314aac;
+    }
   }
 }

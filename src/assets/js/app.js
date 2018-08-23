@@ -106,9 +106,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
   $('.navigation-toggle').on('click', function(e) {
     e.preventDefault();
 
-    var navigation = $('.navigation');
+    var navigation = $('.navigation'),
+      navigationToggle = $(this);
 
-    if (navigation) navigation.toggleClass('shown');
+    if (navigation) {
+      navigation.toggleClass('shown');
+      navigationToggle.toggleClass('active');
+    }
   });
 
   // hero slider

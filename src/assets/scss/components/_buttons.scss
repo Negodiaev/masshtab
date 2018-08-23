@@ -29,26 +29,40 @@
     height: 3px;
     border-radius: 2px;
     opacity: 1;
-    background-color: $anchor-color;
-    transition: background-color 0.15s linear;
+    background-color: $anchor-color-hover;
+    transition: background-color 0.2s linear;
     &:first-child,
     &:nth-child(3) {
-      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:first-child {
       top: 3px;
     }
     &:nth-child(2) {
       top: 11px;
-      transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:nth-child(3) {
       top: 19px;
     }
   }
-  &:hover {
+  // &:hover,
+  // &:focus {
+  //   i {
+  //     background-color: $white;
+  //   }
+  // }
+  &.active {
     i {
-      background-color: $anchor-color-hover;
+      &:first-child {
+        transform: translateY(8px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
     }
   }
 }
