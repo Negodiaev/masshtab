@@ -1,10 +1,14 @@
+.hero-slide-inner {
+  box-sizing: border-box;
+}
 .hero-content {
+  padding: 15px 0;
   font-size: rem-calc(15);
   line-height: unitless-calc(24, 15);
   color: $white;
 }
 .hero-title {
-  font-size: rem-calc(20);
+  margin-bottom: 1rem;
   line-height: unitless-calc(50, 38);
   color: $white;
 }

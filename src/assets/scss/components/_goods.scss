@@ -1,27 +1,34 @@
 .goods-card {
-  border-bottom: 7px solid #314aac;
-  color: get-color(primary-dark);
-  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  border-bottom: 7px solid $primary-light;
+  color: $primary-dark;
+  transition: border-color 0.3s linear, background-color 0.2s linear 0.1s;
   &:hover,
   &:focus {
     border-bottom: 7px solid #4891ea;
     color: $white;
     background-color: $primary-color;
+    transition: border-color 0.3s linear, background-color 0.2s linear 0.1s;
     .goods-picture {
       opacity: 0;
+      transition: opacity 0.1s linear;
       &.shadow {
         opacity: 1;
+        transition: opacity 0.2s linear 0.1s;
       }
+    }
+    .card-info {
+      color: $white;
     }
   }
 }
 .goods-picture {
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s linear 0.2s;
   &.shadow {
     position: absolute;
     top: 50%;
     left: 50%;
     opacity: 0;
     transform: translate(-50%, -50%);
+    transition: opacity 0.1s linear;
   }
 }

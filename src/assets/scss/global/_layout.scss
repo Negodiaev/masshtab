@@ -24,13 +24,58 @@
 .picture-container-content {
   z-index: 2;
 }
+.section {
+  padding: 20px 0;
+  &.light {
+    background-color: whitesmoke;
+  }
+}
+.blocks-cell {
+  margin-bottom: 10px;
+}
+.blocks-card {
+  margin-bottom: 0;
+  height: 100%;
+}
 .card-picture,
 .card-info {
   position: relative;
 }
 .card-picture {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 auto;
+  overflow: hidden;
+  height: rem-calc(200);
 }
 .card-info {
   z-index: 2;
+  padding-top: 0;
+  font-size: rem-calc(15);
+  line-height: unitless-calc(25, 15);
+  font-weight: 600;
+  p {
+    margin-bottom: rem-calc(15);
+    line-height: unitless-calc(25, 15);
+  }
+}
+.card-info-title {
+  font-size: rem-calc(13);
+  line-height: unitless-calc(21, 13);
+  font-weight: $global-weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $primary-dark;
+  transition: color 0.2s linear 0.1s;
+}
+.card-info-extra {
+  font-size: rem-calc(14);
+  line-height: unitless-calc(20, 14);
+  font-weight: $global-weight-normal;
+  color: $anchor-color-hover;
+}
+.content-card {
+  // padding: 20px 0;
+  background-color: $white;
 }

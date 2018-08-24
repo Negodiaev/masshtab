@@ -1,30 +1,39 @@
-.header {
-  color: $white;
-  background-color: #162973;
+.header,
+.footer {
   a {
     border: 0;
   }
+}
+.header {
+  color: $white;
+  background-color: $primary-background;
 }
 .header-content {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 .infoblock-picture {
-  margin-right: rem-calc(18);
-  width: rem-calc(61);
-  height: rem-calc(61);
   &.bordered {
     border: 2px solid rgba($white, 0.17);
   }
 }
+.header-infoblock-picture {
+  margin-right: rem-calc(18);
+  width: rem-calc(61);
+  height: rem-calc(61);
+}
 .infoblock-content {
-  font-size: rem-calc(18);
   line-height: 1;
 }
+.header-infoblock-content {
+  font-size: rem-calc(18);
+}
 .infoblock-text {
-  margin-bottom: rem-calc(10);
   line-height: 1;
   font-weight: 600;
+}
+.header-infoblock-text {
+  margin-bottom: rem-calc(10);
 }
 .phone-link {
   border: 0;
@@ -37,7 +46,7 @@
 }
 .infoblock-link {
   font-size: rem-calc(14);
-  color: #41c8ff;
+  color: $primary-lightest;
   &:hover,
   &:focus {
     color: $anchor-color-hover;

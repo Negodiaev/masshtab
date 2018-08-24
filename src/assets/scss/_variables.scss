@@ -75,15 +75,21 @@ $foundation-palette: (
   secondary: #ed1c24,
   success: #3adb76,
   warning: #ffae00,
-  alert: #cc4b37,
-  //custom colors
-    primary-dark: #101f58
+  alert: #cc4b37
 );
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
+$light-gray: #e4e4e4;
+$medium-gray: #989898;
 $dark-gray: #8a8a8a;
 $black: #000;
 $white: #fff;
+// custom colors
+$primary-dark: #101f58;
+$primary-light: #314aac;
+$primary-lightest: #41c8ff;
+$primary-background: #162973;
+$primary-background-light: #172e86;
+$primary-background-dark: #0a1b59;
+// $super-light-gray: whitesmoke;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -128,22 +134,23 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 $header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: $global-weight-bold;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: inherit;
-$header-lineheight: 1.4;
+$header-color: $primary-dark;
+$header-lineheight: unitless-calc(25, 20);
 $header-margin-bottom: 0.5rem;
 $header-styles: (
   small: (
     'h1': (
-      'font-size': 24
+      'font-size': 26
     ),
     'h2': (
-      'font-size': 20
+      'font-size': 24,
+      'mb': rem-calc(16)
     ),
     'h3': (
-      'font-size': 19
+      'font-size': 20
     ),
     'h4': (
       'font-size': 18
@@ -157,19 +164,41 @@ $header-styles: (
   ),
   medium: (
     'h1': (
-      'font-size': 48
+      'font-size': 32
     ),
     'h2': (
-      'font-size': 40
+      'font-size': 26,
+      'mb': rem-calc(22)
     ),
     'h3': (
-      'font-size': 31
+      'font-size': 22
     ),
     'h4': (
-      'font-size': 25
+      'font-size': 19
     ),
     'h5': (
+      'font-size': 17
+    ),
+    'h6': (
+      'font-size': 16
+    )
+  ),
+  large: (
+    'h1': (
+      'font-size': 38
+    ),
+    'h2': (
+      'font-size': 30,
+      'mb': rem-calc(38)
+    ),
+    'h3': (
+      'font-size': 25
+    ),
+    'h4': (
       'font-size': 20
+    ),
+    'h5': (
+      'font-size': 18
     ),
     'h6': (
       'font-size': 16
@@ -179,8 +208,8 @@ $header-styles: (
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.6;
-$paragraph-margin-bottom: 1rem;
+$paragraph-lineheight: unitless-calc(25, 16);
+$paragraph-margin-bottom: rem-calc(16);
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
 $code-font-family: $font-family-monospace;
@@ -193,8 +222,8 @@ $anchor-color-hover: #009ee0;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
-$hr-border: 1px solid $medium-gray;
-$hr-margin: rem-calc(20) auto;
+$hr-border: 3px solid $medium-gray;
+$hr-margin: rem-calc(30) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
 $list-style-type: disc;
@@ -286,11 +315,11 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // 11. Button
 // ----------
 $button-font-family: inherit;
-$button-padding: 0.85em 1em;
+$button-padding: rem-calc(10 10);
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
-$button-background: $primary-color;
-$button-background-hover: scale-color($button-background, $lightness: -15%);
+$button-background: $primary-light;
+$button-background-hover: scale-color($button-background, $lightness: -10%);
 $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius;
@@ -298,12 +327,12 @@ $button-hollow-border-width: 1px;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 0.9rem,
+  default: rem-calc(15),
   large: 1.25rem
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
-$button-background-hover-lightness: -20%;
+$button-background-hover-lightness: -10%;
 $button-hollow-hover-lightness: -50%;
 $button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
 // 12. Button Group
@@ -329,11 +358,11 @@ $callout-link-tint: 30%;
 $card-background: $white;
 $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
-$card-border: 1px solid $light-gray;
+$card-border: 0;
 $card-shadow: none;
 $card-border-radius: $global-radius;
-$card-padding: $global-padding;
-$card-margin-bottom: $global-margin;
+$card-padding: rem-calc(20);
+$card-margin-bottom: rem-calc(10);
 // 15. Close Button
 // ----------------
 $closebutton-position: right top;
@@ -401,10 +430,10 @@ $fieldset-border: 1px solid $medium-gray;
 $fieldset-padding: rem-calc(20);
 $fieldset-margin: rem-calc(18 0);
 $legend-padding: rem-calc(0 3);
-$form-spacing: rem-calc(16);
-$helptext-color: $black;
+$form-spacing: rem-calc(12);
+$helptext-color: #989898;
 $helptext-font-size: rem-calc(13);
-$helptext-font-style: italic;
+$helptext-font-style: normal;
 $input-prefix-color: $black;
 $input-prefix-background: $light-gray;
 $input-prefix-border: 1px solid $medium-gray;
@@ -412,24 +441,24 @@ $input-prefix-padding: 1rem;
 $form-label-color: $black;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
-$form-label-line-height: 1.8;
+$form-label-line-height: unitless-calc(30, 14);
 $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
-$input-color: $black;
+$input-color: $body-font-color;
 $input-placeholder-color: $medium-gray;
 $input-font-family: inherit;
-$input-font-size: rem-calc(16);
+$input-font-size: rem-calc(13);
 $input-font-weight: $global-weight-normal;
-$input-line-height: $global-lineheight;
+$input-line-height: unitless-calc(20, 13);
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $medium-gray;
-$input-border-focus: 1px solid $dark-gray;
-$input-padding: $form-spacing / 2;
-$input-shadow: inset 0 1px 2px rgba($black, 0.1);
-$input-shadow-focus: 0 0 5px $medium-gray;
+$input-border: 1px solid #c9c9c9;
+$input-border-focus: 1px solid $medium-gray;
+$input-padding: rem-calc(14 20);
+$input-shadow: none;
+$input-shadow-focus: none;
 $input-cursor-disabled: not-allowed;
 $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
 $input-number-spinners: true;
@@ -742,7 +771,7 @@ $grid-container: $global-width;
 $grid-columns: 12;
 $grid-margin-gutters: (
   small: 20px,
-  medium: 30px
+  medium: 20px
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;

@@ -23,7 +23,6 @@ svg {
   fill: currentColor;
 }
 
-.title {
-  font-weight: $global-weight-bold;
-  color: get-color(primary-dark);
+.subsection-title {
+  font-weight: 600;
 }

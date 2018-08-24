@@ -55,7 +55,7 @@
 
 // vendor styles
 @import 'vendor/aos';
-@import 'vendor/slick-carousel';
+// @import 'vendor/slick-carousel';
 @import 'vendor/swiper';
 @import 'vendor/wa-mediabox';
 @import 'vendor/index-menu';
@@ -78,6 +78,7 @@
 @import 'global/typography';
 
 // custom components
+@import 'components/forms';
 @import 'components/buttons';
 @import 'components/navigation';
 
@@ -86,6 +87,8 @@
 
 @import 'components/hero';
 @import 'components/goods';
+@import 'components/popular';
+@import 'components/send';
 
 // media queries
 @import 'global/responsive';

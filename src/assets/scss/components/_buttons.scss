@@ -1,16 +1,30 @@
 .button {
   box-sizing: border-box;
-  // width: rem-calc(225);
+  min-width: rem-calc(189);
   border: 0;
-  // line-height: unitless-calc(19, 15);
-  // font-weight: 600;
+  line-height: unitless-calc(20.01, 15);
+  font-weight: 600;
   white-space: nowrap;
+  &.secondary {
+    color: $white;
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+  &.primary-light {
+    background-color: $anchor-color-hover;
+    &:hover,
+    &:focus {
+      background-color: $primary-light;
+    }
+  }
   // &.short {
   //   width: rem-calc(200);
   // }
-  // &.long {
-  //   width: rem-calc(240);
-  // }
+  &.long {
+    min-width: rem-calc(263);
+  }
   // &.rounded {
   //   border-radius: 50%;
   // }

@@ -1,0 +1,16 @@
+.popular-card {
+  border: 1px solid $light-gray;
+  &:hover,
+  &:focus {
+    border-color: $light-gray;
+    color: $card-font-color;
+  }
+}
+.popular-card-picture {
+  height: rem-calc(254);
+}
+.popular-card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

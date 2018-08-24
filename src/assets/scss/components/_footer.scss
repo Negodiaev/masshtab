@@ -1,6 +1,112 @@
 .footer {
-  background-image: linear-gradient(90deg, #172e86 37%, #162973 0);
+  color: $white;
+  background-color: $primary-background;
+  hr {
+    border-width: 3px;
+    border-color: #2c45a6;
+  }
+}
+.footer-col {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.footer-contact-col {
+  background-color: $primary-background-light;
+}
+.footer-logo {
+  margin-bottom: rem-calc(30);
+}
+.footer-infoblock {
+  margin-bottom: rem-calc(30);
+}
+.footer-infoblock-text {
+  margin-bottom: rem-calc(5);
+}
+.footer-infoblock-picture {
+  margin-right: rem-calc(12);
+  width: rem-calc(26);
+  height: rem-calc(40);
+}
+.scl-menu {
+  margin-bottom: rem-calc(10);
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: rem-calc(49);
+    height: rem-calc(49);
+    border: 0;
+    border-radius: 50%;
+    color: $white;
+    background-color: #1d3cb3;
+    &:hover {
+      color: $white;
+      background-color: #00b6ff;
+    }
+  }
+  &.simple {
+    li {
+      & + li {
+        margin-left: rem-calc(18);
+      }
+    }
+  }
+}
+.links {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  li {
+    font-size: rem-calc(14);
+    line-height: unitless-calc(21, 14);
+    & + li {
+      margin-top: rem-calc(20);
+    }
+  }
+  a {
+    line-height: unitless-calc(21, 14);
+    color: #bcc7f3;
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+  &.simple {
+    align-items: flex-start;
+    li {
+      text-align: left;
+      & + li {
+        margin-left: 0;
+      }
+    }
+  }
+}
+.footer-subsection {
+  max-width: 600px;
+  font-size: rem-calc(14);
+  color: #cbd5fc;
+}
+.footer-subsection-title {
+  margin-bottom: rem-calc(16);
+  color: $white;
+}
+.footer-subsection-button {
+  margin-bottom: rem-calc(10);
 }
 .footer-bottom {
-  background-color: #0a1b59;
+  padding: 16px 0 8px;
+  background-color: $primary-background-dark;
+}
+.copyright {
+  margin-bottom: rem-calc(8);
+  font-size: rem-calc(14);
+  line-height: unitless-calc(20, 14);
+  color: #7b88ba;
+  a {
+    color: $white;
+    &:hover,
+    &:focus {
+      color: $anchor-color-hover;
+    }
+  }
 }
