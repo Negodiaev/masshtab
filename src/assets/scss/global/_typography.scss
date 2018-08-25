@@ -1,3 +1,6 @@
+ul {
+  font-size: rem-calc(15);
+}
 a,
 button {
   outline: 0;
@@ -15,6 +18,36 @@ a {
     border-bottom-color: transparent;
   }
 }
+table {
+  tbody {
+    tr {
+      & + tr {
+        border-top: 1px solid #bfbfbf;
+      }
+    }
+  }
+  th,
+  td {
+    vertical-align: middle;
+    &:last-child {
+      text-align: right;
+    }
+  }
+  th,
+  td:first-child {
+    font-size: rem-calc(15);
+    line-height: unitless-calc(25, 15);
+  }
+  th {
+    padding-top: rem-calc(42);
+    padding-bottom: rem-calc(5);
+    font-weight: $global-weight-normal;
+    color: #a5a5a5;
+  }
+  .table-label {
+    display: block;
+  }
+}
 svg {
   vertical-align: middle;
   fill: currentColor;
@@ -25,6 +58,9 @@ svg {
 .title {
   &.white {
     color: $white;
+  }
+  &.black {
+    color: $black;
   }
   &.bordered {
     position: relative;
@@ -46,4 +82,19 @@ svg {
 }
 .subsection-title {
   font-weight: 600;
+}
+.list {
+  li {
+    padding-top: rem-calc(4);
+    padding-bottom: rem-calc(4);
+    &:before {
+      content: '\2022';
+      vertical-align: middle;
+      margin-right: rem-calc(5);
+      font-size: rem-calc(30);
+      line-height: 20px;
+      font-weight: 700;
+      color: $primary-color;
+    }
+  }
 }

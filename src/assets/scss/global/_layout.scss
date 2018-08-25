@@ -85,14 +85,10 @@
   margin-bottom: rem-calc(10);
 }
 .custom-object {
-  padding-top: rem-calc(20);
   font-size: rem-calc(15);
   line-height: unitless-calc(24, 15);
   p {
     line-height: unitless-calc(24, 15);
-  }
-  &:first-child {
-    padding-top: rem-calc(10);
   }
   & + .custom-object {
     border-top: 1px solid #a3a3a3;

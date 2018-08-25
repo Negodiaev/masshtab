@@ -127,4 +127,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
       // crossFade: true
     }
   });
+
+  // lightbox
+  //Translate - set before any binding
+  WAMediaBox.lang = {
+    prev: 'Назад',
+    next: 'Вперёд',
+    close: 'Закрыть',
+    openInNew: 'Открыть в новом окне'
+  };
 });

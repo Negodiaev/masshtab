@@ -90,7 +90,7 @@ $primary-background: #162973;
 $primary-background-light: #172e86;
 $primary-background-dark: #0a1b59;
 $super-light-gray: whitesmoke;
-$body-background: $super-light-gray;
+$body-background: #f7f7f7;
 $body-font-color: $black;
 $body-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $body-antialiased: true;
@@ -175,7 +175,8 @@ $header-styles: (
       'mb': rem-calc(13)
     ),
     'h4': (
-      'font-size': 19
+      'font-size': 19,
+      'mb': rem-calc(14)
     ),
     'h5': (
       'font-size': 17
@@ -196,7 +197,8 @@ $header-styles: (
       'font-size': 25
     ),
     'h4': (
-      'font-size': 20
+      'font-size': 20,
+      'mb': rem-calc(23)
     ),
     'h5': (
       'font-size': 18
@@ -225,11 +227,11 @@ $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
 $hr-border: 3px solid $medium-gray;
 $hr-margin: rem-calc(30) auto;
-$list-lineheight: $paragraph-lineheight;
+$list-lineheight: unitless-calc(24, 15);
 $list-margin-bottom: $paragraph-margin-bottom;
-$list-style-type: disc;
+$list-style-type: none;
 $list-style-position: outside;
-$list-side-margin: 1.25rem;
+$list-side-margin: 0;
 $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
@@ -694,24 +696,24 @@ $switch-paddle-radius: $global-radius;
 $switch-paddle-transition: all 0.25s ease-out;
 // 50. Table
 // ---------
-$table-background: $white;
+$table-background: #f8fbfc;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
-$table-padding: rem-calc(8 10 10);
+$table-border: 0;
+$table-padding: rem-calc(21 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
-$table-is-striped: true;
+$table-is-striped: false;
 $table-striped-background: smart-scale($table-background, $table-color-scale);
 $table-stripe: even;
-$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+$table-head-background: #f8fbfc;
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
 $table-foot-background: smart-scale($table-background, $table-color-scale);
 $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
 $table-head-font-color: $body-font-color;
 $table-foot-font-color: $body-font-color;
-$show-header-for-stacked: false;
-$table-stack-breakpoint: medium;
+$show-header-for-stacked: true;
+$table-stack-breakpoint: small;
 // 51. Tabs
 // --------
 $tab-margin: 0;

@@ -5,6 +5,7 @@
 - [Home page | Главная](https://negodiaev.github.io/masshtab/)
 - [Catalog | Каталог](https://negodiaev.github.io/masshtab/catalog.html)
 - [Form | Форма](https://negodiaev.github.io/masshtab/form-page.html)
+- [Inner page | Типовая страница](https://negodiaev.github.io/masshtab/inner.html)
 
 ---
 

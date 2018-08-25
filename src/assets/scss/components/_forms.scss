@@ -34,71 +34,71 @@
     }
   }
 }
-// .checkboxes {
-//   li {
-//     &:before {
-//       display: none;
-//     }
-//   }
-// }
-// .checkbox {
-//   position: absolute;
-//   left: -9999px;
-//   pointer-events: none;
-//   & + label {
-//     position: relative;
-//     margin: 0;
-//     padding-left: rem-calc(29);
-//     font-size: rem-calc(15);
-//     line-height: unitless-calc(25, 15);
-//     cursor: pointer;
-//     user-select: none;
-//     &:before {
-//       content: '';
-//       position: absolute;
-//       top: 50%;
-//       left: 0;
-//       width: rem-calc(20);
-//       height: rem-calc(20);
-//       border: 1px solid #c6c6c6;
-//       text-align: center;
-//       transform: translateY(-50%);
-//     }
-//     &:empty {
-//       padding-left: rem-calc(20);
-//     }
-//   }
-//   &:checked {
-//     & + label {
-//       &:before {
-//         color: $primary-color;
-//         background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNDQgMzIiPjxkZWZzPjxjbGlwUGF0aCBpZD0iYjAwZWQyZjUtOGZkYy00ZjM0LTlhMjQtYjk1NDBhZWMzYzlmIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDApIj48cmVjdCB3aWR0aD0iNDQiIGhlaWdodD0iMzIiIHN0eWxlPSJmaWxsOm5vbmUiLz48L2NsaXBQYXRoPjwvZGVmcz48dGl0bGU+Y2hlY2stbWFyazwvdGl0bGU+PGcgaWQ9ImE0ODI4MmNhLTJmMTQtNDc1ZS05ZTQ3LTUzZTg0OWFlNWQ1MyIgZGF0YS1uYW1lPSJMYXllciAyIj48ZyBpZD0iZDRkNzk1ZGEtY2YzMy00ZjhmLWI3MzAtNmFkMzA3MmNiN2IxIiBkYXRhLW5hbWU9IkxheWVyIDEiPjxnIHN0eWxlPSJjbGlwLXBhdGg6dXJsKCNiMDBlZDJmNS04ZmRjLTRmMzQtOWEyNC1iOTU0MGFlYzNjOWYpIj48cGF0aCBkPSJNNi44MywxMy4xNywxNiwyMi4zNCwzNy4xNywxLjE3YTQsNCwwLDAsMSw1LjY2LDUuNjZsLTI0LDI0YTQsNCwwLDAsMS01LjY2LDBsLTEyLTEyYTQsNCwwLDAsMSw1LjY2LTUuNjYiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMCkiIHN0eWxlPSJmaWxsOiMwN2IiLz48L2c+PC9nPjwvZz48L3N2Zz4=);
-//         background-repeat: no-repeat;
-//         background-position: 50% 50%;
-//         background-size: 90%;
-//       }
-//     }
-//   }
-// }
-// .radio {
-//   @extend .checkbox;
-//   & + label {
-//     &:before {
-//       font-size: rem-calc(26);
-//       line-height: unitless-calc(19, 26);
-//       font-weight: $global-weight-bold;
-//       border-radius: 50%;
-//     }
-//   }
-//   &:checked {
-//     & + label {
-//       &:before {
-//         content: '\2022';
-//         background-image: none;
-//       }
-//     }
-//   }
-// }
+.checkboxes {
+  li {
+    &:before {
+      display: none;
+    }
+  }
+}
+.checkbox {
+  position: absolute;
+  left: -9999px;
+  pointer-events: none;
+  & + label {
+    position: relative;
+    margin: 0;
+    padding-left: rem-calc(29);
+    font-size: rem-calc(15);
+    line-height: unitless-calc(25, 15);
+    cursor: pointer;
+    user-select: none;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: rem-calc(20);
+      height: rem-calc(20);
+      border: 1px solid #c6c6c6;
+      text-align: center;
+      transform: translateY(-50%);
+    }
+    &:empty {
+      padding-left: rem-calc(20);
+    }
+  }
+  &:checked {
+    & + label {
+      &:before {
+        color: $primary-color;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNS45OCAxMS45OCI+PHRpdGxlPmNoZWNrLW1hcms8L3RpdGxlPjxnIGlkPSJlOTQ3NzZkMS01ZTE4LTQyYjgtODZmMC00ODg5MTU0ZmM2ODgiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IjZiMmVkNTkwLTJlMjYtNDlhYy04ZDk2LTAwODJkNDcyMGQyNCIgZGF0YS1uYW1lPSJMYXllciAxIj48cG9seWdvbiBwb2ludHM9IjE1Ljk4IDEuNjggMTQuMjYgMCA1LjI4IDguNzMgMS43MiA1LjI4IDAgNi45NiA1LjE3IDExLjk4IDUuNTQgMTEuNjMgNS42NCAxMS43MyAxNS45OCAxLjY4IiBzdHlsZT0iZmlsbDojMjAzODkzO2ZpbGwtcnVsZTpldmVub2RkIi8+PC9nPjwvZz48L3N2Zz4=);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: 90%;
+      }
+    }
+  }
+}
+.radio {
+  @extend .checkbox;
+  & + label {
+    &:before {
+      font-size: rem-calc(26);
+      line-height: unitless-calc(19, 26);
+      font-weight: $global-weight-bold;
+      border-radius: 50%;
+    }
+  }
+  &:checked {
+    & + label {
+      &:before {
+        content: '\2022';
+        background-image: none;
+      }
+    }
+  }
+}
 .upload-file-container {
   position: relative;
   input:disabled,

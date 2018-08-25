@@ -15,3 +15,52 @@
     }
   }
 }
+.pages-navigation {
+  border: 1px solid #b9bfd7;
+  li {
+    font-size: rem-calc(13);
+    line-height: unitless-calc(24, 13);
+    text-transform: uppercase;
+    font-weight: 600;
+    & + li {
+      & > a {
+        border-top: 1px solid #e5eafd;
+      }
+    }
+    &.active {
+      & > a {
+        color: $white;
+        background-color: #6679c1;
+      }
+    }
+  }
+  a {
+    padding: rem-calc(16 10);
+    border: 0;
+    line-height: unitless-calc(24, 13);
+    color: #061551;
+    background-color: $white;
+  }
+  &:hover {
+    & > li {
+      &.active {
+        & > a {
+          color: #061551;
+          background-color: $white;
+          &:hover,
+          &:focus {
+            color: $white;
+            background-color: #6679c1;
+          }
+        }
+      }
+    }
+    a {
+      &:hover,
+      &:focus {
+        color: $white;
+        background-color: #6679c1;
+      }
+    }
+  }
+}
