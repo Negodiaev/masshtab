@@ -1,6 +1,10 @@
 .form {
+  input,
+  select {
+    height: rem-calc(50);
+  }
   textarea {
-    height: rem-calc(112);
+    height: rem-calc(101);
     resize: none;
   }
 }
@@ -21,7 +25,6 @@
     margin-bottom: 0;
     padding: rem-calc(12 45 12 20);
     min-width: rem-calc(165);
-    height: rem-calc(50);
     border: 1px solid transparent;
     font-size: rem-calc(15);
     line-height: unitless-calc(24, 15);
@@ -123,7 +126,7 @@
   background-size: 13px 27px;
 }
 .upload-file-link {
-  margin-bottom: rem-calc(15);
+  margin-bottom: rem-calc(10);
   line-height: 0;
   .upload-file-label {
     display: inline-block;
@@ -148,44 +151,31 @@
     transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
   }
 }
-// .files-to-remove {
-//   padding-bottom: rem-calc(20);
-// }
-// .remove-file-link {
-//   .close-button {
-//     position: static;
-//     margin-right: rem-calc(9);
-//     padding: rem-calc(10 0);
-//     font-size: rem-calc(14);
-//     line-height: unitless-calc(15, 14);
-//     color: $body-font-color;
-//     .icon {
-//       vertical-align: middle;
-//       color: $secondary-color;
-//     }
-//   }
-//   .file-size {
-//     color: $dark-gray;
-//   }
-//   &:last-of-type {
-//     margin-bottom: rem-calc(10);
-//   }
-// }
-// .submit-button {
-//   margin-bottom: 0;
-//   padding-top: rem-calc(10);
-//   padding-bottom: rem-calc(11);
-//   font-size: rem-calc(11);
-//   line-height: unitless-calc(20, 11);
-//   font-weight: $global-weight-bold;
-//   text-transform: uppercase;
-//   letter-spacing: 0.14em;
-//   background-color: #e33836;
-//   &:hover,
-//   &:focus {
-//     background-color: $secondary-color;
-//   }
-// }
+.files-to-remove {
+  padding-bottom: rem-calc(10);
+}
+.remove-file-link {
+  font-size: rem-calc(14);
+  line-height: unitless-calc(20, 14);
+  .close-button {
+    position: static;
+    margin-right: rem-calc(9);
+    padding: rem-calc(10 0);
+    font-size: rem-calc(14);
+    line-height: unitless-calc(15, 14);
+    color: $body-font-color;
+    .icon {
+      vertical-align: middle;
+      color: $secondary-color;
+    }
+  }
+  .file-size {
+    color: $medium-gray;
+  }
+  &:last-of-type {
+    margin-bottom: rem-calc(10);
+  }
+}
 .policy {
   padding-top: 2px;
   line-height: unitless-calc(20, 13);

@@ -1,3 +1,11 @@
 .send-content-card {
   padding-top: 20px;
 }
+.send-form {
+  textarea {
+    height: rem-calc(112);
+  }
+  .upload-file-link {
+    margin-bottom: rem-calc(15);
+  }
+}

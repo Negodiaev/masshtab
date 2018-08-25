@@ -38,7 +38,6 @@
   //   border-radius: 50%;
   // }
 }
-
 .burger {
   position: relative;
   width: 25px;
@@ -88,4 +87,11 @@
       }
     }
   }
+}
+.form-submit-button {
+  height: rem-calc(40);
+  font-size: rem-calc(11);
+  line-height: unitless-calc(20, 11);
+  font-weight: $global-weight-bold;
+  letter-spacing: 0.14em;
 }

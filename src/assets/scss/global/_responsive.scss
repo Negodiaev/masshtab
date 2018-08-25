@@ -46,6 +46,11 @@
       margin-bottom: rem-calc(22);
     }
   }
+  .form-content-card {
+    padding-top: rem-calc(30);
+    padding-left: rem-calc(10);
+    padding-right: rem-calc(10);
+  }
 }
 
 @include breakpoint(large) {
@@ -104,11 +109,20 @@
     }
     input,
     textarea {
-      margin-bottom: rem-calc(40);
+      margin-bottom: rem-calc(31);
     }
   }
-  .upload-file-link {
-    margin-bottom: rem-calc(39);
+  .files-to-remove {
+    padding-bottom: rem-calc(28);
+  }
+  .send-form {
+    input,
+    textarea {
+      margin-bottom: rem-calc(40);
+    }
+    .upload-file-link {
+      margin-bottom: rem-calc(39);
+    }
   }
   .footer {
     background-image: linear-gradient(90deg, $primary-background-light 25%, $primary-background 0);
@@ -160,6 +174,14 @@
   .catalog-objects-section {
     padding-top: rem-calc(70);
     padding-bottom: rem-calc(10);
+  }
+  .form-content-card {
+    margin-top: rem-calc(6);
+    margin-bottom: rem-calc(53);
+    padding: rem-calc(70 70 42);
+  }
+  .form-content-title {
+    margin-bottom: rem-calc(55);
   }
 }
 
@@ -284,9 +306,6 @@
 @include breakpoint(small only) {
   // Home page
   .small-expanded {
-    width: 100%;
-  }
-  .submit-button {
     width: 100%;
   }
 

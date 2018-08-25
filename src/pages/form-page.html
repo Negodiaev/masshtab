@@ -1,0 +1,79 @@
+---
+layout: page
+meta-title: Форма
+---
+
+<main class="main">
+  {{> breadcrumbs}}
+  <div class="grid-container">
+    <form>
+      <div class="form form-content-card content-card content-block">
+        <div class="grid-container">
+          <h1 class="form-content-title h2 text-center">Заголовок формы</h1>
+          <div class="grid-x grid-padding-x">
+            <div class="cell large-4">
+              <label>Имя
+                <input type="text" placeholder="Представтесь, пожалуйста">
+              </label>
+            </div>
+            <!-- /.cell -->
+            <div class="cell medium-6 large-4">
+              <label>Телефон
+                <input type="text" placeholder="Введите телефон">
+              </label>
+            </div>
+            <!-- /.cell -->
+            <div class="cell medium-6 large-4">
+              <label>E-mail
+                <input type="text" placeholder="Введите e-mail">
+              </label>
+            </div>
+            <!-- /.cell -->
+          </div>
+          <!-- /.grid-x -->
+          <label>Текст запроса
+            <textarea class="small" placeholder="Задайте свой вопрос или опишите проблему"></textarea>
+          </label>
+          <div class="upload-file-link upload-file-container">
+            <label for="upload-file-button" class="upload-file-label">
+              <span class="upload-file-text">Прикрепить файлы</span>
+            </label>
+            <input type="file" id="upload-file-button" class="show-for-sr">
+          </div>
+          <div class="files-to-remove">
+            <div class="remove-file-link" data-closable="">
+              <button class="close-button" aria-label="Close alert" type="button" data-close="">
+                <span aria-hidden="true">
+                  <svg class="icon" width="12" height="12">
+                    <use xlink:href="#closer"></use>
+                  </svg>
+                </span>
+              </button>
+              <span class="remove-file-text">Document.doc
+                <span class="file-size">(258 kb)</span>
+              </span>
+            </div>
+            <div class="remove-file-link" data-closable="">
+              <button class="close-button" aria-label="Close alert" type="button" data-close="">
+                <span aria-hidden="true">
+                  <svg class="icon" width="12" height="12">
+                    <use xlink:href="#closer"></use>
+                  </svg>
+                </span>
+              </button>
+              <span class="remove-file-text">illustration.jpeg
+                <span class="file-size">(15 258 kb)</span>
+              </span>
+            </div>
+          </div>
+          <button type="submit" class="form-submit-button submit-button button small secondary long small-expanded text-up">Отправить заказ</button>
+          <p class="policy help-text">Нажимая кнопку отправить Вы соглашаетесь с пользовательским соглашением и даете согласие на обработку Ваших персональных данных согласно Условиям политики конфидициальности</p>
+        </div>
+        <!-- /.grid-container -->
+      </div>
+      <!-- /.content-card -->
+    </form>
+  </div>
+  <!-- /.grid-container -->
+</main>
+<!-- /.main -->

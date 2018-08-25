@@ -19,6 +19,9 @@ svg {
   vertical-align: middle;
   fill: currentColor;
 }
+.text-up {
+  text-transform: uppercase;
+}
 .title {
   &.white {
     color: $white;

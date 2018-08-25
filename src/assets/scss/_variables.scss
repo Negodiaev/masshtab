@@ -327,7 +327,7 @@ $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
 $button-sizes: (
   tiny: 0.6rem,
-  small: 0.75rem,
+  small: rem-calc(11),
   default: rem-calc(15),
   large: 1.25rem
 );
@@ -455,7 +455,7 @@ $input-line-height: unitless-calc(20, 13);
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid #c9c9c9;
+$input-border: 1px solid $light-gray;
 $input-border-focus: 1px solid $medium-gray;
 $input-padding: rem-calc(14 20);
 $input-shadow: none;
