@@ -85,13 +85,13 @@
   margin-bottom: rem-calc(10);
 }
 .custom-object {
+  margin-bottom: rem-calc(20);
+  padding: rem-calc(10);
   font-size: rem-calc(15);
   line-height: unitless-calc(24, 15);
+  background-color: $white;
   p {
     line-height: unitless-calc(24, 15);
-  }
-  & + .custom-object {
-    border-top: 1px solid #a3a3a3;
   }
 }
 .custom-object-picture {
@@ -100,6 +100,14 @@
 }
 .custom-object-title {
   display: inline-block;
+  color: $primary-dark;
+  a {
+    color: inherit;
+    &:hover,
+    &:focus {
+      color: $primary-color;
+    }
+  }
 }
 .form-content-card {
   margin-left: auto;

@@ -14,9 +14,24 @@
   padding-bottom: rem-calc(10);
 }
 .catalog-object {
+  margin-bottom: 0;
   padding-top: rem-calc(20);
   &:first-child {
     padding-top: rem-calc(10);
+  }
+  & + .catalog-object {
+    border-top: 1px solid #a3a3a3;
+  }
+}
+.catalog-object-title {
+  color: $primary-light;
+  a {
+    border-color: $primary-light;
+    &:hover,
+    &:focus {
+      color: $primary-color;
+      border-color: transparent;
+    }
   }
 }
 .preview-gallery-link {
@@ -63,4 +78,14 @@
 .media-link-subtitle {
   display: inline-block;
   color: #95a7ae;
+}
+.projects-object {
+  p {
+    line-height: unitless-calc(25, 15);
+  }
+}
+.projects-object-title {
+  a {
+    border: 0;
+  }
 }

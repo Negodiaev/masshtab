@@ -36,8 +36,11 @@
   .page-content-card {
     padding: rem-calc(20);
   }
+  .custom-object {
+    padding: rem-calc(20);
+  }
   .catalog-object {
-    padding-bottom: rem-calc(20);
+    padding: rem-calc(20 10);
   }
   .sidebar-section {
     margin-bottom: rem-calc(20);
@@ -62,6 +65,9 @@
         }
       }
     }
+  }
+  .media-link {
+    padding: rem-calc(20);
   }
 }
 
@@ -176,9 +182,11 @@
   .page-goods-blocks {
     margin-bottom: rem-calc(60);
   }
+  .custom-object {
+    padding: rem-calc(30);
+  }
   .catalog-object {
-    padding-top: rem-calc(40);
-    padding-bottom: rem-calc(40);
+    padding: rem-calc(40 10);
     &:first-child {
       padding-top: rem-calc(30);
     }
@@ -219,6 +227,9 @@
       }
     }
   }
+  .media-link {
+    padding: rem-calc(20);
+  }
   .content {
     p {
       padding-right: rem-calc(20);
@@ -232,6 +243,13 @@
     a {
       padding: rem-calc(27 16);
     }
+  }
+  .inner-pages-navigation {
+    margin-top: rem-calc(7);
+  }
+  .projects-content {
+    padding-top: rem-calc(19);
+    padding-bottom: rem-calc(54);
   }
 }
 
