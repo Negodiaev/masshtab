@@ -68,7 +68,7 @@
 // ---------
 
 $global-font-size: 100%;
-$global-width: rem-calc(1260);
+$global-width: rem-calc(1200);
 $global-lineheight: unitless-calc(25, 16);
 $foundation-palette: (
   primary: #203893,
@@ -79,7 +79,7 @@ $foundation-palette: (
 );
 $light-gray: #e4e4e4;
 $medium-gray: #989898;
-$dark-gray: #8a8a8a;
+$dark-gray: #656565;
 $black: #000;
 $white: #fff;
 // custom colors
@@ -89,8 +89,8 @@ $primary-lightest: #41c8ff;
 $primary-background: #162973;
 $primary-background-light: #172e86;
 $primary-background-dark: #0a1b59;
-// $super-light-gray: whitesmoke;
-$body-background: $white;
+$super-light-gray: whitesmoke;
+$body-background: $super-light-gray;
 $body-font-color: $black;
 $body-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $body-antialiased: true;
@@ -171,7 +171,8 @@ $header-styles: (
       'mb': rem-calc(22)
     ),
     'h3': (
-      'font-size': 22
+      'font-size': 22,
+      'mb': rem-calc(13)
     ),
     'h4': (
       'font-size': 19
@@ -301,17 +302,17 @@ $badge-minwidth: 2.1em;
 $badge-font-size: 0.6rem;
 // 10. Breadcrumbs
 // ---------------
-$breadcrumbs-margin: 0 0 $global-margin 0;
-$breadcrumbs-item-font-size: rem-calc(11);
-$breadcrumbs-item-color: $primary-color;
-$breadcrumbs-item-color-current: $black;
+$breadcrumbs-margin: 0;
+$breadcrumbs-item-font-size: rem-calc(13);
+$breadcrumbs-item-color: $dark-gray;
+$breadcrumbs-item-color-current: #acacac;
 $breadcrumbs-item-color-disabled: $medium-gray;
-$breadcrumbs-item-margin: 0.75rem;
-$breadcrumbs-item-uppercase: true;
+$breadcrumbs-item-margin: 3px;
+$breadcrumbs-item-uppercase: false;
 $breadcrumbs-item-separator: true;
 $breadcrumbs-item-separator-item: '/';
 $breadcrumbs-item-separator-item-rtl: '\\';
-$breadcrumbs-item-separator-color: $medium-gray;
+$breadcrumbs-item-separator-color: $dark-gray;
 // 11. Button
 // ----------
 $button-font-family: inherit;
@@ -442,8 +443,8 @@ $form-label-color: $black;
 $form-label-font-size: rem-calc(14);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: unitless-calc(30, 14);
-$select-background: $white;
-$select-triangle-color: $dark-gray;
+$select-background: transparent;
+$select-triangle-color: transparent;
 $select-radius: $global-radius;
 $input-color: $body-font-color;
 $input-placeholder-color: $medium-gray;
@@ -475,8 +476,8 @@ $label-padding: 0.33333rem 0.5rem;
 $label-radius: $global-radius;
 // 22. Media Object
 // ----------------
-$mediaobject-margin-bottom: $global-margin;
-$mediaobject-section-padding: $global-padding;
+$mediaobject-margin-bottom: 0;
+$mediaobject-section-padding: rem-calc(20);
 $mediaobject-image-width-stacked: 100%;
 // 23. Menu
 // --------

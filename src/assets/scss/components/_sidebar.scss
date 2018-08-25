@@ -1,0 +1,49 @@
+.sidebar-section,
+.sidebar-block {
+  padding: rem-calc(10);
+}
+.sidebar-section {
+  margin-bottom: rem-calc(10);
+  border: 1px solid gainsboro;
+  background-color: $white;
+  &.light {
+    border: 0;
+    background-color: #f7f7f7;
+  }
+}
+.sidebar-block {
+  font-size: rem-calc(14);
+  line-height: unitless-calc(24, 14);
+  p {
+    line-height: unitless-calc(24, 14);
+  }
+  &.primary-light {
+    color: $white;
+    background-color: $primary-light;
+  }
+  &.secondary {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.catalog-select {
+  margin-bottom: rem-calc(10);
+}
+.sidebar-block-title {
+  line-height: unitless-calc(32, 20);
+}
+.cart-infoblock {
+  margin-bottom: rem-calc(25);
+}
+.cart-infoblock-picture {
+  margin-right: rem-calc(13);
+  color: $primary-light;
+}
+.cart-infoblock-content {
+  font-size: rem-calc(15);
+  line-height: unitless-calc(20, 15);
+  color: $primary-dark;
+}
+.cart-infoblock-title {
+  font-weight: 600;
+}

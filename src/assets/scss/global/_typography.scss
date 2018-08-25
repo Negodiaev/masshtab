@@ -3,12 +3,10 @@ button {
   outline: 0;
   transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
 }
-
 a,
 svg {
   display: inline-block;
 }
-
 a {
   line-height: 1;
   border-bottom: 1px solid $anchor-color;
@@ -17,12 +15,32 @@ a {
     border-bottom-color: transparent;
   }
 }
-
 svg {
   vertical-align: middle;
   fill: currentColor;
 }
-
+.title {
+  &.white {
+    color: $white;
+  }
+  &.bordered {
+    position: relative;
+    margin-bottom: rem-calc(40);
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: rem-calc(-23);
+      left: 0;
+      width: rem-calc(48);
+      height: 2px;
+    }
+    &.secondary {
+      &:after {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
 .subsection-title {
   font-weight: 600;
 }

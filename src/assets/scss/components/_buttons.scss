@@ -5,6 +5,15 @@
   line-height: unitless-calc(20.01, 15);
   font-weight: 600;
   white-space: nowrap;
+  &.default {
+    color: $primary-light;
+    background-color: $white;
+    &:hover,
+    &:focus {
+      color: $white;
+      background-color: $anchor-color;
+    }
+  }
   &.secondary {
     color: $white;
     &:hover,

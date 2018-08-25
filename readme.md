@@ -3,6 +3,7 @@
 ## Pages list | Список страниц
 
 - [Home page | Главная](https://negodiaev.github.io/masshtab/)
+- [Catalog | Каталог](https://negodiaev.github.io/masshtab/catalog.html)
 
 ---
 

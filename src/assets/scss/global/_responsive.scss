@@ -27,6 +27,25 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  // Inner pages
+  .content-block {
+    margin-bottom: rem-calc(20);
+  }
+  .page-content-card {
+    padding: rem-calc(20);
+  }
+  .custom-object {
+    padding-bottom: rem-calc(20);
+  }
+  .sidebar-section {
+    margin-bottom: rem-calc(20);
+  }
+  .sidebar-block {
+    p {
+      margin-bottom: rem-calc(22);
+    }
+  }
 }
 
 @include breakpoint(large) {
@@ -113,6 +132,35 @@
   .footer-subsection {
     padding-top: rem-calc(20);
   }
+
+  // Inner pages
+  .breadcrumbs {
+    padding-top: rem-calc(24);
+    padding-bottom: rem-calc(42);
+  }
+  .content-block {
+    margin-bottom: rem-calc(48);
+  }
+  .page-content-card {
+    padding: rem-calc(68 64 40);
+  }
+  .page-content-button {
+    margin-top: rem-calc(24);
+  }
+  .page-goods-blocks {
+    margin-bottom: rem-calc(60);
+  }
+  .custom-object {
+    padding-top: rem-calc(40);
+    padding-bottom: rem-calc(40);
+    &:first-child {
+      padding-top: rem-calc(30);
+    }
+  }
+  .catalog-objects-section {
+    padding-top: rem-calc(70);
+    padding-bottom: rem-calc(10);
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -123,18 +171,35 @@
     }
   }
   .send-content-card {
-    margin-left: rem-calc(-48);
-    margin-right: rem-calc(-48);
-    padding-left: rem-calc(70);
+    padding-left: rem-calc(30);
+  }
+
+  // Inner pages
+  .sidebar-section {
+    margin-bottom: rem-calc(30);
+    padding: rem-calc(30 25);
+  }
+  .sidebar-block {
+    padding: rem-calc(20);
+  }
+  .catalog-select {
+    margin-bottom: rem-calc(20);
   }
 }
 
 @include breakpoint(1280px) {
   // Home page
+  .send-content-card {
+    padding-left: rem-calc(70);
+  }
 }
 
 @include breakpoint(xxlarge) {
   // Home page
+  .send-content-card {
+    margin-left: rem-calc(-78);
+    margin-right: rem-calc(-78);
+  }
 }
 
 @include breakpoint(large down) {
@@ -223,5 +288,20 @@
   }
   .submit-button {
     width: 100%;
+  }
+
+  // Inner pages
+  .breadcrumbs {
+    li {
+      display: none;
+      max-width: rem-calc(140);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:first-child,
+      &:last-child {
+        display: list-item;
+      }
+    }
   }
 }

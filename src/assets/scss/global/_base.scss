@@ -53,6 +53,12 @@ body {
   }
 }
 
+.main {
+  &.white {
+    background-color: $white;
+  }
+}
+
 // hide the sprite
 .sprite-container {
   position: absolute;

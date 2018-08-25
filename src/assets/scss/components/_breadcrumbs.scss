@@ -1,0 +1,13 @@
+.breadcrumbs {
+  padding: 1rem 0;
+  li {
+    line-height: unitless-calc(23, 13);
+  }
+  a {
+    border: 0;
+    &:hover {
+      color: $anchor-color-hover;
+      text-decoration: none;
+    }
+  }
+}

@@ -6,12 +6,12 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная | Масштаб</title>
+  <title>Каталог | Масштаб</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" media="all and (min-width: 960px)">
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
 
-<body>
+<body class="catalog page">
 
   <div class="sticky-footer">
     <header class="header">
@@ -81,255 +81,243 @@
 </header>
 <!-- /.header --> 
 <main class="main">
-  <div class="hero">
-    <div id="hero-slider" class="hero-slider swiper-container">
-      <div class="swiper-wrapper">
-        <div class="hero-slide swiper-slide hero-picture-container picture-container">
-          <img src="assets/img/hero/bg-slide-1.jpg" class="to-left" alt="">
-          <div class="hero-slide-inner picture-container-content">
-            <div class="grid-container">
+  <div class="grid-container">
+    <ul class="breadcrumbs">
+      <li>
+        <a href="#">Главная страница</a>
+      </li>
+      <li>
+        <a href="#">Второстепенная</a>
+      </li>
+      <li>
+        <span class="show-for-sr">Активная страница: </span> Активная страница
+      </li>
+    </ul>
+  </div>
+  <!-- /.grid-container -->  <div class="grid-container">
+    <div class="content-block">
+      <img src="assets/img/catalog/1.jpg" alt="">
+    </div>
+    <div class="page-content-card content-card content-block">
+      <h1 class="h2">Заголовок категории</h1>
+      <p>
+        Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная»
+        (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление
+        его внутренней структуры.
+      </p>
+      <p>
+        Репрезентативный — рассмотрение текста как особой формы представления знаний о внешней тексту действительности. виде письменного
+        документа, состоящее из ряда высказываний, объединённых разными типами лексической, грамматической и логической связи,
+        имеющее определённый моральный характер, прагматическую установку и соответственно литературно обработанное»[1].
+      </p>
+      <a href="#" class="page-content-button button long">Быстрый поиск кулачков</a>
+    </div>
+    <!-- /.content-card -->
+    <div class="page-goods-blocks goods-blocks blocks grid-x grid-padding-x medium-up-2 large-up-3 xlarge-up-5">
+      <div class="blocks-cell cell">
+        <a href="#" class="goods-card blocks-card card">
+          <div class="card-picture card-section">
+            <img src="assets/img/goods/1.png" class="goods-picture" alt="">
+            <img src="assets/img/goods/1-s.png" class="goods-picture shadow" alt="">
+          </div>
+          <div class="goods-card-info card-info-title card-info card-section">Зубчатые накладные кулачки</div>
+        </a>
+      </div>
+      <!-- /.cell -->
+      <div class="blocks-cell cell">
+        <a href="#" class="goods-card blocks-card card">
+          <div class="card-picture card-section">
+            <img src="assets/img/goods/2.png" class="goods-picture" alt="">
+            <img src="assets/img/goods/2-s.png" class="goods-picture shadow" alt="">
+          </div>
+          <div class="goods-card-info card-info-title card-info card-section">Мягкие накладные кулачки</div>
+        </a>
+      </div>
+      <!-- /.cell -->
+      <div class="blocks-cell cell">
+        <a href="#" class="goods-card blocks-card card">
+          <div class="card-picture card-section">
+            <img src="assets/img/goods/3.png" class="goods-picture" alt="">
+            <img src="assets/img/goods/3-s.png" class="goods-picture shadow" alt="">
+          </div>
+          <div class="goods-card-info card-info-title card-info card-section">Твердые ступенчатые накладные кулачки</div>
+        </a>
+      </div>
+      <!-- /.cell -->
+      <div class="blocks-cell cell">
+        <a href="#" class="goods-card blocks-card card">
+          <div class="card-picture card-section">
+            <img src="assets/img/goods/4.png" class="goods-picture" alt="">
+            <img src="assets/img/goods/4-s.png" class="goods-picture shadow" alt="">
+          </div>
+          <div class="goods-card-info card-info-title card-info card-section">Твердые ступенчатые блочные кулачки</div>
+        </a>
+      </div>
+      <!-- /.cell -->
+      <div class="blocks-cell cell">
+        <a href="#" class="goods-card blocks-card card">
+          <div class="card-picture card-section">
+            <img src="assets/img/goods/5.png" class="goods-picture" alt="">
+            <img src="assets/img/goods/5-s.png" class="goods-picture shadow" alt="">
+          </div>
+          <div class="goods-card-info card-info-title card-info card-section">Пазовые сухари</div>
+        </a>
+      </div>
+      <!-- /.cell -->
+    </div>
+    <!-- /.goods-blocks -->
+  </div>
+  <!-- /.grid-container -->
+  <div class="catalog-objects-section section white">
+    <div class="grid-container">
+      <div class="grid-x grid-padding-x">
+        <div class="cell large-9">
+          <div class="custom-object media-object stack-for-small">
+            <div class="media-object-section">
+              <a href="#" class="custom-object-picture">
+                <img src="assets/img/objects/1.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-object-section">
+              <h3 class="custom-object-title"><a href="#">Наименование</a></h3>
+              <p>Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная»
+                (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность
+                на выявление его внутренней структуры. </p>
+            </div>
+          </div>
+          <!-- /.custom-object -->
+          <div class="custom-object media-object stack-for-small">
+            <div class="media-object-section">
+              <a href="#" class="custom-object-picture">
+                <img src="assets/img/objects/2.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-object-section">
+              <h3 class="custom-object-title"><a href="#">Заголовок</a></h3>
+              <p>Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная»
+                (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность
+                на выявление его внутренней структуры. </p>
+            </div>
+          </div>
+          <!-- /.custom-object -->
+          <div class="custom-object media-object stack-for-small">
+            <div class="media-object-section">
+              <a href="#" class="custom-object-picture">
+                <img src="assets/img/objects/3.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-object-section">
+              <h3 class="custom-object-title"><a href="#">Наименование</a></h3>
+              <p>Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная»
+                (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность
+                на выявление его внутренней структуры. </p>
+            </div>
+          </div>
+          <!-- /.custom-object -->
+          <div class="custom-object media-object stack-for-small">
+            <div class="media-object-section">
+              <a href="#" class="custom-object-picture">
+                <img src="assets/img/objects/4.jpg" alt="">
+              </a>
+            </div>
+            <div class="media-object-section">
+              <h3 class="custom-object-title"><a href="#">Пазовые сухари</a></h3>
+              <p>Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная»
+                (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность
+                на выявление его внутренней структуры. </p>
+            </div>
+          </div>
+          <!-- /.custom-object -->
+        </div>
+        <!-- /.cell -->
+        <div class="cell large-3">
+          <aside class="sidebar">
+            <div class="sidebar-section light">
               <div class="grid-x grid-padding-x">
-                <div class="cell small-11 medium-8 large-5 xlarge-4">
-                  <div class="hero-content">
-                    <div class="hero-title h1">Заголовок слайда</div>
-                    <p>Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная)
-                      и «репрезентативная» (более частная). Имманентный подход подразумевает отношение к тексту как к автономной
-                      реальности, нацеленность на выявление его внутренней структуры.</p>
-                    <a href="#" class="button secondary">Перейти</a>
+                <div class="cell medium-6 large-12">
+                  <div class="catalog-select select">
+                    <select id="category-select">
+                      <option value="0">Раздел</option>
+                      <option value="1">Раздел 1</option>
+                      <option value="2">Раздел 2</option>
+                      <option value="3">Раздел 3</option>
+                    </select>
                   </div>
-                  <!-- /.hero-content -->
+                  <div class="catalog-select select">
+                    <select id="title-select">
+                      <option value="0">Наименование</option>
+                      <option value="1">Наименование 1</option>
+                      <option value="2">Наименование 2</option>
+                      <option value="3">Наименование 3</option>
+                      <option value="4">Наименование 4</option>
+                    </select>
+                  </div>
+                  <div class="catalog-select select">
+                    <select id="property-select">
+                      <option value="0">Свойство</option>
+                      <option value="1">Свойство 1</option>
+                      <option value="2">Свойство 2</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- /.cell -->
+                <div class="cell medium-6 large-12">
+                  <div class="sidebar-block primary-light">
+                    <h4 class="sidebar-block-title title white bordered secondary h4">Отправьте заявку</h4>
+                    <p>Существуют две основные трактовки понятия «текст»: «имманентная»</p>
+                    <a href="#" class="button default">Отправить</a>
+                  </div>
+                  <!-- /.sidebar-block -->
                 </div>
                 <!-- /.cell -->
               </div>
               <!-- /.grid-x -->
             </div>
-            <!-- /.grid-container -->
-          </div>
-          <!-- /.hero-slide-inner -->
-        </div>
-        <!-- /.hero-slide -->
-        <div class="hero-slide swiper-slide hero-picture-container picture-container">
-          <img src="assets/img/hero/bg-slide-1.jpg" alt="">
-          <div class="hero-slide-inner picture-container-content">
-            <div class="grid-container">
-              <div class="grid-x grid-padding-x">
-                <div class="cell small-11 medium-8 large-5 xlarge-4">
-                  <div class="hero-content">
-                    <div class="hero-title h1">Слайд 2</div>
-                    <p>Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление
-                      его внутренней структуры.</p>
-                    <p>Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная)
-                      и «репрезентативная» (более частная). Имманентный подход подразумевает отношение к тексту как к автономной
-                      реальности, нацеленность на выявление его внутренней структуры.</p>
+            <!-- /.sidebar-section -->
+            <div class="grid-x grid-padding-x">
+              <div class="cell medium-6 large-12">
+                <div class="sidebar-section">
+                  <div class="sidebar-block secondary">
+                    <h4 class="title bordered secondary h4">Быстрый поиск кулачков</h4>
+                    <a href="#" class="button">Перейти к поиску</a>
                   </div>
-                  <!-- /.hero-content -->
                 </div>
-                <!-- /.cell -->
+                <!-- /.sidebar-section -->
               </div>
-              <!-- /.grid-x -->
-            </div>
-            <!-- /.grid-container -->
-          </div>
-          <!-- /.hero-slide-inner -->
-        </div>
-        <!-- /.hero-slide -->
-        <div class="hero-slide swiper-slide hero-picture-container picture-container">
-          <img src="assets/img/hero/bg-slide-1.jpg" alt="">
-          <div class="hero-slide-inner picture-container-content">
-            <div class="grid-container">
-              <div class="grid-x grid-padding-x">
-                <div class="cell small-11 medium-8 large-5 xlarge-4">
-                  <div class="hero-content">
-                    <div class="hero-title h1">Заголовок слайда 3</div>
-                    <p>Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление
-                      его внутренней структуры.</p>
-                    <a href="#" class="button secondary">Перейти</a>
+              <!-- /.cell -->
+              <div class="cell medium-6 large-12">
+                <div class="sidebar-section">
+                  <div class="sidebar-block secondary">
+                    <h4 class="title bordered secondary h4">Корзина</h4>
+                    <div class="cart-infoblock infoblock flex-container align-middle">
+                      <div class="cart-infoblock-picture infoblock-picture">
+                        <svg class="icon" width="34" height="25">
+                          <use xlink:href="#cart"></use>
+                        </svg>
+                      </div>
+                      <div class="cart-infoblock-content infoblock-content">
+                        <div class="cart-infoblock-title">5 товаров</div> на сумму 
+                        <span class="cart-infoblock-sum">2 500</span> руб
+                      </div>
+                    </div>
+                    <a href="#" class="button">Перейти в корзину</a>
                   </div>
-                  <!-- /.hero-content -->
                 </div>
-                <!-- /.cell -->
+                <!-- /.sidebar-section -->
               </div>
-              <!-- /.grid-x -->
+              <!-- /.cell -->
             </div>
-            <!-- /.grid-container -->
-          </div>
-          <!-- /.hero-slide-inner -->
-        </div>
-        <!-- /.hero-slide -->
-      </div>
-      <!-- /.swiper-wrapper -->
-    </div>
-    <!-- /.hero-slider -->
-  </div>
-  <!-- /.hero -->
-  <div class="goods section light">
-    <div class="grid-container">
-      <div class="h2">Продукция</div>
-      <div class="goods-blocks blocks grid-x grid-padding-x medium-up-2 large-up-3 xlarge-up-5">
-        <div class="blocks-cell cell">
-          <a href="#" class="goods-card blocks-card card">
-            <div class="card-picture card-section">
-              <img src="assets/img/goods/1.png" class="goods-picture" alt="">
-              <img src="assets/img/goods/1-s.png" class="goods-picture shadow" alt="">
-            </div>
-            <div class="goods-card-info card-info-title card-info card-section">Зубчатые накладные кулачки</div>
-          </a>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <a href="#" class="goods-card blocks-card card">
-            <div class="card-picture card-section">
-              <img src="assets/img/goods/2.png" class="goods-picture" alt="">
-              <img src="assets/img/goods/2-s.png" class="goods-picture shadow" alt="">
-            </div>
-            <div class="goods-card-info card-info-title card-info card-section">Мягкие накладные кулачки</div>
-          </a>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <a href="#" class="goods-card blocks-card card">
-            <div class="card-picture card-section">
-              <img src="assets/img/goods/3.png" class="goods-picture" alt="">
-              <img src="assets/img/goods/3-s.png" class="goods-picture shadow" alt="">
-            </div>
-            <div class="goods-card-info card-info-title card-info card-section">Твердые ступенчатые накладные кулачки</div>
-          </a>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <a href="#" class="goods-card blocks-card card">
-            <div class="card-picture card-section">
-              <img src="assets/img/goods/4.png" class="goods-picture" alt="">
-              <img src="assets/img/goods/4-s.png" class="goods-picture shadow" alt="">
-            </div>
-            <div class="goods-card-info card-info-title card-info card-section">Твердые ступенчатые блочные кулачки</div>
-          </a>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <a href="#" class="goods-card blocks-card card">
-            <div class="card-picture card-section">
-              <img src="assets/img/goods/5.png" class="goods-picture" alt="">
-              <img src="assets/img/goods/5-s.png" class="goods-picture shadow" alt="">
-            </div>
-            <div class="goods-card-info card-info-title card-info card-section">Пазовые сухари</div>
-          </a>
+            <!-- /.grid-x -->
+          </aside>
+          <!-- /.sidebar -->
         </div>
         <!-- /.cell -->
       </div>
-      <!-- /.goods-blocks -->    </div>
-    <!-- /.grid-container -->
-  </div>
-  <!-- /.goods -->
-  <div class="popular section white">
-    <div class="grid-container">
-      <div class="h2">Популярные изделия</div>
-      <div class="popular-blocks blocks grid-x grid-padding-x medium-up-2 xlarge-up-4 align-center">
-        <div class="blocks-cell cell">
-          <a href="#" class="popular-card blocks-card card">
-            <div class="popular-card-picture card-picture card-section">
-              <img src="assets/img/popular/1.jpg" alt="">
-            </div>
-            <div class="popular-card-info card-info card-section">
-              <p>Твердые ступенчатые блочные кулачки</p>
-              <div class="card-info-extra">Краткая характеристика</div>
-            </div>
-          </a>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <a href="#" class="popular-card blocks-card card">
-            <div class="popular-card-picture card-picture card-section">
-              <img src="assets/img/popular/2.jpg" alt="">
-            </div>
-            <div class="popular-card-info card-info card-section">
-              <p>Зубчатые накладные кулачки</p>
-              <div class="card-info-extra">200x500</div>
-            </div>
-          </a>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <a href="#" class="popular-card blocks-card card">
-            <div class="popular-card-picture card-picture card-section">
-              <img src="assets/img/popular/3.jpg" alt="">
-            </div>
-            <div class="popular-card-info card-info card-section">
-              <p>Твердые ступенчатые блочные кулачки</p>
-              <div class="card-info-extra">Размер или характеристика</div>
-            </div>
-          </a>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <a href="#" class="popular-card blocks-card card">
-            <div class="popular-card-picture card-picture card-section">
-              <img src="assets/img/popular/4.jpg" alt="">
-            </div>
-            <div class="popular-card-info card-info card-section">
-              <p>Зубчатые накладные кулачки</p>
-              <div class="card-info-extra">Сделано из стали</div>
-            </div>
-          </a>
-        </div>
-        <!-- /.cell -->
-      </div>
-      <!-- /.popular-blocks -->
+      <!-- /.grid-x -->
     </div>
     <!-- /.grid-container -->
   </div>
-  <!-- /.popular -->
-  <div class="send section light">
-    <div class="grid-container">
-      <div class="send-content-card content-card picture-container">
-        <div class="picture-container-content grid-container fluid">
-          <div class="grid-x grid-padding-x">
-            <div class="form cell large-8 large-offset-2 xlarge-6 xlarge-offset-0">
-              <div class="h2">Отправить техническое задание</div>
-              <form>
-                <div class="grid-x grid-padding-x">
-                  <div class="cell medium-6">
-                    <label>Ваше имя
-                      <input type="text" placeholder="Представтесь, пожалуйста">
-                    </label>
-                  </div>
-                  <!-- /.cell -->
-                  <div class="cell medium-6">
-                    <label>Ваш телефон
-                      <input type="text" placeholder="Введите телефон">
-                    </label>
-                  </div>
-                  <!-- /.cell -->
-                </div>
-                <!-- /.grid-x -->
-                <label>Текст вопроса
-                  <textarea placeholder="Введите вопрос"></textarea>
-                </label>
-                <div class="upload-file-link upload-file-container">
-                  <label for="upload-file-button" class="upload-file-label">
-                    <span class="upload-file-text">Прикрепить файлы</span>
-                  </label>
-                  <input type="file" id="upload-file-button" class="show-for-sr">
-                </div>
-                <div class="flex-container flex-dir-column medium-flex-dir-row align-top">
-                  <button type="submit" class="submit-button button secondary small-expanded">Отправить</button>
-                  <p class="policy help-text">Нажимая кнопку отправить Вы соглашаетесь с пользовательским соглашением и даете согласие
-                    на обработку Ваших персональных данных согласно Условиям <a href="#">политики конфидициальности</a></p>
-                </div>
-              </form>
-            </div>
-            <!-- /.cell -->
-          </div>
-          <!-- /.grid-x -->
-        </div>
-        <!-- /.grid-container -->
-        <img src="assets/img/bg-form-send.jpg" class="to-right" alt="">
-      </div>
-      <!-- /.send-content-card -->
-    </div>
-    <!-- /.grid-container -->
-  </div>
-  <!-- /.send -->
+  <!-- /.section -->  
 </main>
 <!-- /.main -->
  <footer class="footer">

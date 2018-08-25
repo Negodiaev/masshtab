@@ -1,0 +1,16 @@
+// Inner pages
+.page-content-card {
+  padding: rem-calc(10);
+  p {
+    font-size: rem-calc(15);
+    line-height: unitless-calc(24, 15);
+  }
+}
+.page-content-button {
+  margin-top: rem-calc(10);
+}
+
+.catalog-objects-section {
+  padding-top: rem-calc(10);
+  padding-bottom: rem-calc(10);
+}
