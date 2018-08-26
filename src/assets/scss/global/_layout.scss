@@ -131,3 +131,11 @@
   padding: rem-calc(20 0 10);
   max-width: rem-calc(923);
 }
+.content-section {
+  padding-bottom: rem-calc(12);
+  font-size: rem-calc(15);
+  line-height: unitless-calc(24, 15);
+  p {
+    line-height: unitless-calc(24, 15);
+  }
+}

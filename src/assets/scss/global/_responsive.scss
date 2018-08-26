@@ -254,17 +254,18 @@
     padding-top: rem-calc(19);
     padding-bottom: rem-calc(54);
   }
+  .gallery {
+    padding-top: rem-calc(8);
+    padding-right: rem-calc(20);
+  }
   .page-heading,
   .project-gallery {
     margin-bottom: rem-calc(40);
   }
-  .project-gallery {
-    padding-right: rem-calc(20);
-  }
   .project-gallery-thumbs {
     height: 97px;
   }
-  .project-info {
+  .content-section {
     margin-bottom: rem-calc(44);
     & > p {
       margin-bottom: rem-calc(38);
@@ -280,6 +281,22 @@
   }
   .project-info-button {
     margin-top: rem-calc(20);
+  }
+  .product-info {
+    margin-bottom: rem-calc(5);
+  }
+  .filter-section {
+    padding-bottom: rem-calc(44);
+  }
+  .filter-select {
+    margin-bottom: rem-calc(40);
+  }
+  .filter-card {
+    margin-bottom: rem-calc(36);
+    padding: rem-calc(20);
+  }
+  .filter-table {
+    margin-bottom: rem-calc(7);
   }
 }
 
@@ -402,6 +419,65 @@
       transform: translate(0, 0);
     }
   }
+  .filter-table {
+    margin-bottom: 0;
+    thead tr,
+    tbody,
+    tbody tr {
+      display: flex;
+    }
+    thead tr,
+    tbody {
+      flex-wrap: wrap;
+    }
+    th {
+      flex: 1 1 33.3333%;
+    }
+    tbody tr {
+      flex: 1 1 50%;
+    }
+    tbody {
+      tr {
+        flex-direction: column;
+      }
+    }
+    th:nth-child(3n + 1),
+    tr:nth-child(odd) td {
+      padding-left: 0;
+    }
+    th:nth-child(3n + 3),
+    tr:nth-child(even) td {
+      padding-left: rem-calc(10);
+      padding-right: 0;
+    }
+    tr {
+      &:nth-child(odd) {
+        td {
+          border-right: 1px solid #d2d2d2;
+          &:last-child {
+            padding-right: rem-calc(10);
+          }
+        }
+      }
+    }
+    th {
+      padding-bottom: rem-calc(20);
+      &:last-child {
+        display: none;
+      }
+    }
+    td {
+      &:first-child {
+        margin-bottom: auto;
+      }
+      &:last-child {
+        text-align: left;
+      }
+    }
+  }
+  .buy-button {
+    width: 100%;
+  }
 }
 
 @include breakpoint(small only) {
@@ -441,6 +517,51 @@
       &:empty {
         padding-top: 0;
         padding-bottom: 0;
+      }
+    }
+  }
+  .filter-table {
+    thead tr,
+    tbody {
+      flex-direction: column;
+    }
+    thead {
+      tr {
+        padding-bottom: rem-calc(10);
+      }
+    }
+    tr {
+      &:nth-child(odd) {
+        td {
+          border-right: 0;
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+      &:nth-child(even) {
+        td {
+          padding-left: 0;
+        }
+      }
+    }
+    th,
+    td {
+      padding-left: 0;
+      padding-right: 0;
+      &:nth-child(3n + 3) {
+        padding-left: 0;
+      }
+    }
+    th {
+      padding-bottom: rem-calc(10);
+    }
+    td {
+      &:first-child {
+        padding-top: rem-calc(20);
+      }
+      &:last-child {
+        padding-bottom: rem-calc(20);
       }
     }
   }

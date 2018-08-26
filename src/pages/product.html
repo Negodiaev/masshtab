@@ -1,0 +1,160 @@
+---
+layout: page
+meta-title: Товар
+---
+
+<main class="main white">
+  {{> breadcrumbs}}
+  <div class="content grid-container">
+    <h1 class="h2">Заголовок товара</h1>
+    <div class="grid-x grid-padding-x">
+      <div class="cell large-6">
+        <div class="gallery">
+          <img src="assets/img/product/main.jpg" alt="">
+        </div>
+      </div>
+      <!-- /.cell -->
+      <div class="cell large-6">
+        <div class="product-info content-section content-block">
+          <h4 class="content-section-title h4">Описание</h4>
+          <p>Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная»
+            (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление
+            его внутренней структуры.</p>
+          <h4 class="content-section-title h4">Область применения</h4>
+          <p>Репрезентативный — рассмотрение текста как особой формы представления знаний о внешней тексту действительности. виде
+            письменного документа, состоящее из ряда высказываний, объе</p>
+          <h4 class="content-section-title h4">Преимущества</h4>
+          <p>Репрезентативный — рассмотрение текста как особой формы представления знаний о внешней тексту действительности. виде
+            письменного документа, состоящее из ряда высказываний, объединённых разными типами лексической</p>
+          <p>Грамматической и логической связи, имеющее определённый моральный характер, прагматическую установку и соответственно
+            литературно обработанное»[1].</p>
+        </div>
+      </div>
+      <!-- /.product-info -->
+    </div>
+    <!-- /.grid-x -->
+  </div>
+  <!-- /.grid-container -->
+  <div class="filter-section section light">
+    <form>
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+          <div class="cell medium-6 large-3">
+            <div class="filter-select select content-block">
+              <select id="category-select">
+                <option value="0">Раздел</option>
+                <option value="1">Раздел 1</option>
+                <option value="2">Раздел 2</option>
+                <option value="3">Раздел 3</option>
+              </select>
+            </div>
+          </div>
+          <!-- /.cell -->
+          <div class="cell medium-6 large-3">
+            <div class="filter-select select content-block">
+              <select id="property-select">
+                <option value="0">Свойство</option>
+                <option value="1">Свойство 1</option>
+                <option value="2">Свойство 2</option>
+              </select>
+            </div>
+          </div>
+          <!-- /.cell -->
+          <div class="cell medium-6 large-3">
+            <div class="filter-select select content-block">
+              <select id="title-select">
+                <option value="0">Наименование</option>
+                <option value="1">Наименование 1</option>
+                <option value="2">Наименование 2</option>
+                <option value="3">Наименование 3</option>
+                <option value="4">Наименование 4</option>
+              </select>
+            </div>
+          </div>
+          <!-- /.cell -->
+          <div class="cell medium-6 large-3">
+            <div class="filter-select select content-block">
+              <select id="category-select-2">
+                <option value="0">Раздел</option>
+                <option value="1">Раздел 1</option>
+                <option value="2">Раздел 2</option>
+                <option value="3">Раздел 3</option>
+                <option value="3">Раздел 4</option>
+                <option value="3">Раздел 5</option>
+              </select>
+            </div>
+          </div>
+          <!-- /.cell -->
+        </div>
+        <!-- /.grid-x -->
+        <div class="filter-card content-card content-block">
+          <table class="filter-table">
+            <thead>
+              <tr>
+                <th><button type="button" class="sort-button button active">Наименование</button></th>
+                <th><button type="button" class="sort-button button">Параметр</button></th>
+                <th><button type="button" class="sort-button button">Материал</button></th>
+                <th><button type="button" class="sort-button button">Свойство</button></th>
+                <th><button type="button" class="sort-button button">Заголовок </button></th>
+                <th><button type="button" class="sort-button button">Цена</button></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Полное наименование</td>
+                <td>1 568</td>
+                <td>Сталь</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>5 800 р.</td>
+                <td><button type="button" class="buy-button button short plain">Купить</button></td>
+              </tr>
+              <tr>
+                <td>Заголовок товара</td>
+                <td>24 480</td>
+                <td>Аллюминий</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>7 400 р.</td>
+                <td><button type="button" class="buy-button button short plain">Купить</button></td>
+              </tr>
+              <tr>
+                <td>Наименование</td>
+                <td>550</td>
+                <td>Сталь</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>800 р.</td>
+                <td><button type="button" class="buy-button button short plain">Купить</button></td>
+              </tr>
+              <tr>
+                <td>Описание товара</td>
+                <td>1 568</td>
+                <td>Сталь</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>5 800 р.</td>
+                <td><button type="button" class="buy-button button short plain">Купить</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.filter-card -->
+        <div class="page-content-card content-card content-block">
+          <h2 class="h2">Заголовок текста</h2>
+          <p>Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная»
+            (более частная). Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление
+            его внутренней структуры.</p>
+          <p>Репрезентативный — рассмотрение текста как особой формы представления знаний о внешней тексту действительности. виде
+            письменного документа, состоящее из ряда высказываний, объединённых разными типами лексической, грамматической и логической
+            связи, имеющее определённый моральный характер, прагматическую установку и соответственно литературно обработанное»[1].</p>
+        </div>
+        <!-- /.content-card -->
+      </div>
+      <!-- /.grid-container -->
+    </form>
+  </div>
+  <!-- /.filter-section -->
+</main>
+<!-- /.main -->

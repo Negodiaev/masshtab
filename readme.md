@@ -8,6 +8,7 @@
 - [Inner page | Типовая страница](https://negodiaev.github.io/masshtab/inner.html)
 - [Projects | Проекты](https://negodiaev.github.io/masshtab/projects.html)
 - [Project | Проект](https://negodiaev.github.io/masshtab/project.html)
+- [Product | Товар](https://negodiaev.github.io/masshtab/product.html)
 
 ---
 
