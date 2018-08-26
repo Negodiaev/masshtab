@@ -75,6 +75,11 @@
   .custom-object-picture {
     max-width: rem-calc(180);
   }
+  .review-button {
+    &:not(:last-child) {
+      margin-right: rem-calc(20);
+    }
+  }
 }
 
 @include breakpoint(large) {
@@ -316,8 +321,15 @@
     margin-bottom: rem-calc(30);
     padding-bottom: rem-calc(48);
   }
+  .services-content,
+  .reviews-content {
+    padding-top: 0;
+  }
   .services-content {
     padding-bottom: rem-calc(51);
+  }
+  .reviews-content {
+    padding-bottom: rem-calc(56);
   }
 }
 

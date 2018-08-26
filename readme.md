@@ -10,6 +10,8 @@
 - [Project | Проект](https://negodiaev.github.io/masshtab/project.html)
 - [Product | Товар](https://negodiaev.github.io/masshtab/product.html)
 - [Quick search | Быстрый поиск кулачков](https://negodiaev.github.io/masshtab/quick-search.html)
+- [Services | Услуги](https://negodiaev.github.io/masshtab/services.html)
+- [Reviews | Отзывы](https://negodiaev.github.io/masshtab/reviews.html)
 
 ---
 
