@@ -89,3 +89,24 @@
     border: 0;
   }
 }
+.project-info {
+  padding-bottom: rem-calc(12);
+  font-size: rem-calc(15);
+  line-height: unitless-calc(24, 15);
+  p {
+    line-height: unitless-calc(24, 15);
+  }
+}
+.project-info-title {
+  margin-bottom: rem-calc(10);
+}
+.project-info-list {
+  li {
+    margin-bottom: rem-calc(15);
+  }
+  p {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

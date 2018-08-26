@@ -146,7 +146,7 @@ $header-styles: (
       'font-size': 26
     ),
     'h2': (
-      'font-size': 24,
+      'font-size': 23,
       'mb': rem-calc(16)
     ),
     'h3': (
@@ -251,12 +251,12 @@ $abbr-underline: 1px dotted $black;
 // 5. Typography Helpers
 // ---------------------
 $lead-font-size: $global-font-size * 1.25;
-$lead-lineheight: 1.6;
+$lead-lineheight: unitless-calc(29, 20);
 $subheader-lineheight: 1.4;
-$subheader-color: $dark-gray;
+$subheader-color: $primary-dark;
 $subheader-font-weight: $global-weight-normal;
-$subheader-margin-top: 0.2rem;
-$subheader-margin-bottom: 0.5rem;
+$subheader-margin-top: 0;
+$subheader-margin-bottom: 0;
 $stat-font-size: 2.5rem;
 // 6. Abide
 // --------

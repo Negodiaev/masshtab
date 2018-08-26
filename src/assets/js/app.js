@@ -136,4 +136,28 @@ document.addEventListener('DOMContentLoaded', function(event) {
     close: 'Закрыть',
     openInNew: 'Открыть в новом окне'
   };
+
+  //Project gallery
+  var projectGallery = new Swiper('#project-gallery-main', {
+    // spaceBetween: 10,
+    lazy: {
+      loadPrevNext: true
+    },
+    navigation: {
+      nextEl: '#project-gallery-next',
+      prevEl: '#project-gallery-prev'
+    }
+  });
+  var galleryThumbs = new Swiper('#project-gallery-thumbs', {
+    spaceBetween: 4,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    touchRatio: 0.2,
+    slideToClickedSlide: true,
+    lazy: {
+      loadPrevNext: true
+    }
+  });
+  projectGallery.controller.control = galleryThumbs;
+  galleryThumbs.controller.control = projectGallery;
 });

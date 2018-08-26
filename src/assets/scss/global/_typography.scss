@@ -1,6 +1,11 @@
 ul {
   font-size: rem-calc(15);
 }
+p {
+  &.lead {
+    font-weight: 600;
+  }
+}
 a,
 button {
   outline: 0;
@@ -80,6 +85,10 @@ svg {
     }
   }
 }
+.subtitle {
+  font-size: rem-calc(15);
+  line-height: unitless-calc(24, 15);
+}
 .subsection-title {
   font-weight: 600;
 }
@@ -95,6 +104,17 @@ svg {
       line-height: 20px;
       font-weight: 700;
       color: $primary-color;
+    }
+  }
+  &.bullets-outside {
+    padding-left: rem-calc(17);
+    li {
+      position: relative;
+      &:before {
+        position: absolute;
+        top: rem-calc(8);
+        left: rem-calc(-17);
+      }
     }
   }
 }

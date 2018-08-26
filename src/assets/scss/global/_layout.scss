@@ -1,3 +1,19 @@
+.to-left {
+  float: left;
+  margin: rem-calc(0 20 20 0);
+}
+.to-right {
+  float: right;
+  margin: rem-calc(0 0 20 20);
+}
+.clearfix {
+  &:after {
+    content: '';
+    display: table;
+    width: 100%;
+    clear: both;
+  }
+}
 .picture-container,
 .picture-container-content {
   position: relative;

@@ -69,6 +69,9 @@
   .media-link {
     padding: rem-calc(20);
   }
+  .page-title {
+    margin-bottom: rem-calc(12);
+  }
 }
 
 @include breakpoint(large) {
@@ -251,6 +254,33 @@
     padding-top: rem-calc(19);
     padding-bottom: rem-calc(54);
   }
+  .page-heading,
+  .project-gallery {
+    margin-bottom: rem-calc(40);
+  }
+  .project-gallery {
+    padding-right: rem-calc(20);
+  }
+  .project-gallery-thumbs {
+    height: 97px;
+  }
+  .project-info {
+    margin-bottom: rem-calc(44);
+    & > p {
+      margin-bottom: rem-calc(38);
+      &.lead {
+        margin-bottom: rem-calc(23);
+      }
+    }
+  }
+  .project-info-list {
+    &.bullets-outside {
+      padding-left: 0;
+    }
+  }
+  .project-info-button {
+    margin-top: rem-calc(20);
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -310,6 +340,9 @@
 
 @include breakpoint(medium down) {
   // Home page
+  p.lead {
+    font-size: rem-calc(18);
+  }
   .header-logo {
     max-width: 124px;
   }
@@ -378,6 +411,11 @@
   }
 
   // Inner pages
+  .to-right {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+  }
   .breadcrumbs {
     li {
       display: none;
