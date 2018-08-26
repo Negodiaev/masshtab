@@ -1,0 +1,119 @@
+---
+layout: page
+meta-title: Быстрый поиск кулачков
+---
+
+<main class="main">
+  {{> breadcrumbs}}
+  <div class="grid-container">
+    <h1 class="h2">Быстрый поиск кулачков</h1>
+  </div>
+  <!-- /.grid-container -->
+  <div class="quick-search-section filter-section section light">
+    <form>
+      <div class="grid-container">
+        <div class="grid-x grid-padding-x">
+          <div class="cell medium-6 large-3">
+            <div class="filter-select select content-block">
+              <select id="category-select">
+                <option value="0">Раздел</option>
+                <option value="1">Раздел 1</option>
+                <option value="2">Раздел 2</option>
+                <option value="3">Раздел 3</option>
+              </select>
+            </div>
+          </div>
+          <!-- /.cell -->
+          <div class="cell medium-6 large-3">
+            <div class="filter-select select content-block">
+              <select id="property-select">
+                <option value="0">Свойство</option>
+                <option value="1">Свойство 1</option>
+                <option value="2">Свойство 2</option>
+              </select>
+            </div>
+          </div>
+          <!-- /.cell -->
+          <div class="cell medium-6 large-3">
+            <div class="filter-select select content-block">
+              <select id="title-select">
+                <option value="0">Наименование</option>
+                <option value="1">Наименование 1</option>
+                <option value="2">Наименование 2</option>
+                <option value="3">Наименование 3</option>
+                <option value="4">Наименование 4</option>
+              </select>
+            </div>
+          </div>
+          <!-- /.cell -->
+          <div class="cell medium-6 large-3">
+            <div class="filter-select select content-block">
+              <select id="category-select-2">
+                <option value="0">Раздел</option>
+                <option value="1">Раздел 1</option>
+                <option value="2">Раздел 2</option>
+                <option value="3">Раздел 3</option>
+                <option value="3">Раздел 4</option>
+                <option value="3">Раздел 5</option>
+              </select>
+            </div>
+          </div>
+          <!-- /.cell -->
+        </div>
+        <!-- /.grid-x -->
+        <div class="filter-card content-card content-block">
+          <table class="quick-search-table filter-table">
+            <thead>
+              <tr>
+                <th><button type="button" class="sort-button button active">Наименование</button></th>
+                <th><button type="button" class="sort-button button">Параметр</button></th>
+                <th><button type="button" class="sort-button button">Материал</button></th>
+                <th><button type="button" class="sort-button button">Свойство</button></th>
+                <th><button type="button" class="sort-button button">Заголовок </button></th>
+                <th><button type="button" class="sort-button button">Цена</button></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Полное наименование товара длинное</td>
+                <td>1 568</td>
+                <td>Сталь</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>5 800 р.</td>
+              </tr>
+              <tr>
+                <td>Заголовок товара</td>
+                <td>24 480</td>
+                <td>Аллюминий</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>7 400 р.</td>
+              </tr>
+              <tr>
+                <td>Наименование</td>
+                <td>550</td>
+                <td>Сталь</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>800 р.</td>
+              </tr>
+              <tr>
+                <td>Описание товара</td>
+                <td>1 568</td>
+                <td>Сталь</td>
+                <td>Да</td>
+                <td>Да</td>
+                <td>5 800 р.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- /.filter-card -->
+      </div>
+      <!-- /.grid-container -->
+    </form>
+  </div>
+  <!-- /.quick-search-section -->
+</main>
+<!-- /.main -->

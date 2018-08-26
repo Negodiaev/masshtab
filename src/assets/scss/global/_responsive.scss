@@ -286,6 +286,7 @@
     margin-bottom: rem-calc(5);
   }
   .filter-section {
+    padding-top: rem-calc(40);
     padding-bottom: rem-calc(44);
   }
   .filter-select {
@@ -297,6 +298,16 @@
   }
   .filter-table {
     margin-bottom: rem-calc(7);
+  }
+  .quick-search-section {
+    padding-top: rem-calc(33);
+    padding-bottom: rem-calc(50);
+  }
+  .quick-search-table {
+    td {
+      padding-top: rem-calc(20);
+      padding-bottom: rem-calc(20);
+    }
   }
 }
 
@@ -462,7 +473,7 @@
     }
     th {
       padding-bottom: rem-calc(20);
-      &:last-child {
+      &:empty {
         display: none;
       }
     }
@@ -477,6 +488,13 @@
   }
   .buy-button {
     width: 100%;
+  }
+  .quick-search-table {
+    th {
+      &:last-child {
+        text-align: left;
+      }
+    }
   }
 }
 
@@ -562,6 +580,14 @@
       }
       &:last-child {
         padding-bottom: rem-calc(20);
+      }
+    }
+  }
+  .quick-search-table {
+    th {
+      &:last-child {
+        padding-top: rem-calc(10);
+        padding-bottom: rem-calc(10);
       }
     }
   }
