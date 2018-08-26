@@ -72,6 +72,9 @@
   .page-title {
     margin-bottom: rem-calc(12);
   }
+  .custom-object-picture {
+    max-width: rem-calc(180);
+  }
 }
 
 @include breakpoint(large) {
@@ -308,6 +311,13 @@
       padding-top: rem-calc(20);
       padding-bottom: rem-calc(20);
     }
+  }
+  .services-object {
+    margin-bottom: rem-calc(30);
+    padding-bottom: rem-calc(48);
+  }
+  .services-content {
+    padding-bottom: rem-calc(51);
   }
 }
 
