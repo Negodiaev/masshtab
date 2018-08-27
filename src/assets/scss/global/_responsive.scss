@@ -91,6 +91,12 @@
       align-items: center;
     }
   }
+  .contact-item {
+    margin-bottom: rem-calc(30);
+  }
+  .map {
+    height: rem-calc(360);
+  }
 }
 
 @include breakpoint(large) {
@@ -368,6 +374,24 @@
   }
   .production-blocks {
     padding-bottom: rem-calc(45);
+  }
+  .contacts-content {
+    padding-bottom: rem-calc(16);
+  }
+  .contacts-card-section {
+    padding-top: rem-calc(68);
+  }
+  .contacts-card {
+    padding-top: rem-calc(62);
+  }
+  .contacts-card-title {
+    margin-bottom: rem-calc(30);
+  }
+  .contact-item {
+    margin-bottom: rem-calc(52);
+  }
+  .map {
+    height: rem-calc(465);
   }
 }
 

@@ -221,3 +221,14 @@
   color: $white;
   background-color: $primary-background-light;
 }
+.contacts-content {
+  padding: rem-calc(10 0);
+}
+.contact-item {
+  margin-bottom: rem-calc(20);
+  font-size: rem-calc(15);
+  line-height: unitless-calc(24, 15);
+}
+.contact-item-title {
+  margin-bottom: 0;
+}
