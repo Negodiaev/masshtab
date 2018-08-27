@@ -12,6 +12,7 @@
 - [Quick search | Быстрый поиск кулачков](https://negodiaev.github.io/masshtab/quick-search.html)
 - [Services | Услуги](https://negodiaev.github.io/masshtab/services.html)
 - [Reviews | Отзывы](https://negodiaev.github.io/masshtab/reviews.html)
+- [About | О компании](https://negodiaev.github.io/masshtab/about.html)
 
 ---
 

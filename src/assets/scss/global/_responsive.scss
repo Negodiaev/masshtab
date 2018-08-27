@@ -80,6 +80,17 @@
       margin-right: rem-calc(20);
     }
   }
+  .clients-card-info {
+    padding-bottom: rem-calc(40);
+  }
+  .activities-card-title {
+    &.bordered {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
 }
 
 @include breakpoint(large) {
@@ -331,6 +342,33 @@
   .reviews-content {
     padding-bottom: rem-calc(56);
   }
+  .about-content {
+    padding-top: rem-calc(8);
+    padding-bottom: rem-calc(8);
+  }
+  .clients {
+    padding-top: rem-calc(78);
+  }
+  .clients-title {
+    margin-bottom: rem-calc(62);
+  }
+  .activities {
+    padding-top: rem-calc(44);
+    padding-bottom: rem-calc(45);
+  }
+  .activities-title {
+    margin-bottom: rem-calc(58);
+  }
+  .production {
+    padding-top: rem-calc(68);
+    padding-bottom: rem-calc(60);
+  }
+  .production-title {
+    margin-bottom: rem-calc(47);
+  }
+  .production-blocks {
+    padding-bottom: rem-calc(45);
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -354,6 +392,21 @@
   }
   .catalog-select {
     margin-bottom: rem-calc(20);
+  }
+  .about-info {
+    padding-left: rem-calc(20);
+    padding-right: rem-calc(40);
+  }
+  .activities-card {
+    padding-bottom: rem-calc(20);
+  }
+  .activities-card-title {
+    padding-top: rem-calc(52);
+  }
+  .activities-card-info {
+    p {
+      padding-right: rem-calc(15);
+    }
   }
 }
 
@@ -612,5 +665,12 @@
         padding-bottom: rem-calc(10);
       }
     }
+  }
+  .activities-card-title {
+    padding: rem-calc(10);
+  }
+  .activities-card-info {
+    padding-left: rem-calc(10);
+    padding-right: rem-calc(10);
   }
 }

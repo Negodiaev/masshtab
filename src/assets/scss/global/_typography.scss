@@ -83,6 +83,11 @@ svg {
         background-color: $secondary-color;
       }
     }
+    &.primary-light {
+      &:after {
+        background-color: $primary-background-light;
+      }
+    }
   }
 }
 .subtitle {
