@@ -428,6 +428,16 @@
   .order-form {
     margin-bottom: rem-calc(57);
   }
+  .places-content,
+  .philosophy-content {
+    padding-top: rem-calc(7);
+  }
+  .places-content {
+    padding-bottom: rem-calc(107);
+  }
+  .philosophy-content {
+    padding-bottom: rem-calc(82);
+  }
 }
 
 @include breakpoint(xlarge) {
