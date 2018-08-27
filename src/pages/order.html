@@ -1,0 +1,152 @@
+---
+layout: page
+meta-title: Корзина
+---
+
+<main class="main">
+  {{> breadcrumbs}}
+  <div class="grid-container">
+    <h1 class="h2">Оформить заказ</h1>
+    <div class="order-items grid-x grid-padding-x">
+      <div class="blocks-cell cell medium-6 large-12">
+        <div class="order-item blocks-card custom-object media-object stack-for-small" data-closable>
+          <div class="order-picture-wrapper media-object-section">
+            <a href="#" class="order-picture custom-object-picture">
+              <img src="assets/img/order/1.jpg" alt="">
+            </a>
+          </div>
+          <div class="media-object-section">
+            <p>Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная) и «репрезентативная»
+              (более частная). Имманентный подход подразумевает отношение к тексту как к автономной</p>
+          </div>
+          <div class="order-item-price order-item-feature media-object-section">
+            <div class="order-item-property">Цена за шт.</div>
+            <div class="order-item-value">700 руб.</div>
+          </div>
+          <div class="order-item-feature media-object-section">
+            <div class="order-item-property">Количество</div>
+            <div class="amount-counter counter">
+              <button class="counter-button button minus">−</button>
+              <input type="number" class="counter-input bordered" value="2" min="1" max="1001" readonly>
+              <button class="counter-button button plus">+</button>
+            </div>
+          </div>
+          <div class="order-item-feature media-object-section">
+            <div class="order-item-property">Общая стоимость</div>
+            <div class="order-item-value">1 400 руб.</div>
+          </div>
+          <button class="order-close-button close-button" aria-label="Dismiss alert" type="button" data-close>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- /.order-item -->
+      </div>
+      <!-- /.cell -->
+      <div class="blocks-cell cell medium-6 large-12">
+        <div class="order-item blocks-card custom-object media-object stack-for-small" data-closable>
+          <div class="order-picture-wrapper media-object-section">
+            <a href="#" class="order-picture custom-object-picture">
+              <img src="assets/img/order/2.jpg" alt="">
+            </a>
+          </div>
+          <div class="media-object-section">
+            <p>Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление его внутренней структуры.</p>
+          </div>
+          <div class="order-item-price order-item-feature media-object-section">
+            <div class="order-item-property">Цена за шт.</div>
+            <div class="order-item-value">300 руб.</div>
+          </div>
+          <div class="order-item-feature media-object-section">
+            <div class="order-item-property">Количество</div>
+            <div class="amount-counter counter">
+              <button class="counter-button button minus">−</button>
+              <input type="number" class="counter-input bordered" value="2" min="1" max="1001" readonly>
+              <button class="counter-button button plus">+</button>
+            </div>
+          </div>
+          <div class="order-item-feature media-object-section">
+            <div class="order-item-property">Общая стоимость</div>
+            <div class="order-item-value">600 руб.</div>
+          </div>
+          <button class="order-close-button close-button" aria-label="Dismiss alert" type="button" data-close>
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!-- /.order-item -->
+      </div>
+      <!-- /.cell -->
+    </div>
+    <!-- /.order-items -->
+    <div class="order-total large-text-right">Итого: <span class="order-total-number">2 000</span> руб.</div>
+    <form>
+      <div class="order-form form form-content-card content-card content-block">
+        <div class="grid-container">
+          <div class="grid-x grid-padding-x">
+            <div class="cell large-4">
+              <label>Имя
+                <input type="text" placeholder="Представтесь, пожалуйста">
+              </label>
+            </div>
+            <!-- /.cell -->
+            <div class="cell medium-6 large-4">
+              <label>Телефон
+                <input type="text" placeholder="Введите телефон">
+              </label>
+            </div>
+            <!-- /.cell -->
+            <div class="cell medium-6 large-4">
+              <label>E-mail
+                <input type="text" placeholder="Введите e-mail">
+              </label>
+            </div>
+            <!-- /.cell -->
+          </div>
+          <!-- /.grid-x -->
+          <label>Комментарий к заказу
+            <textarea class="small" placeholder="Задайте свой вопрос или опишите проблему"></textarea>
+          </label>
+          <div class="upload-file-link upload-file-container">
+            <label for="upload-file-button" class="upload-file-label">
+              <span class="upload-file-text">Прикрепить файлы</span>
+            </label>
+            <input type="file" id="upload-file-button" class="show-for-sr">
+          </div>
+          <div class="files-to-remove">
+            <div class="remove-file-link" data-closable="">
+              <button class="close-button" aria-label="Close alert" type="button" data-close="">
+                <span aria-hidden="true">
+                  <svg class="icon" width="12" height="12">
+                    <use xlink:href="#closer"></use>
+                  </svg>
+                </span>
+              </button>
+              <span class="remove-file-text">Document.doc
+                <span class="file-size">(258 kb)</span>
+              </span>
+            </div>
+            <div class="remove-file-link" data-closable="">
+              <button class="close-button" aria-label="Close alert" type="button" data-close="">
+                <span aria-hidden="true">
+                  <svg class="icon" width="12" height="12">
+                    <use xlink:href="#closer"></use>
+                  </svg>
+                </span>
+              </button>
+              <span class="remove-file-text">illustration.jpeg
+                <span class="file-size">(15 258 kb)</span>
+              </span>
+            </div>
+          </div>
+          <button type="submit" class="form-submit-button submit-button button small secondary long small-expanded text-up">Отправить
+            заказ</button>
+          <p class="policy help-text">Нажимая кнопку отправить Вы соглашаетесь с <a href="#">пользовательским соглашением</a>
+            и даете согласие на обработку Ваших персональных данных согласно <a href="">Условиям политики конфидициальности</a></p>
+        </div>
+        <!-- /.grid-container -->
+      </div>
+      <!-- /.content-card -->
+    </form>
+  </div>
+  <!-- /.grid-container -->
+</main>
+<!-- /.main -->

@@ -232,3 +232,46 @@
 .contact-item-title {
   margin-bottom: 0;
 }
+.order-items {
+  padding-bottom: rem-calc(13);
+}
+.order-item {
+  position: relative;
+  margin-bottom: 0;
+}
+.order-picture {
+  img {
+    width: 100%;
+  }
+}
+.order-item-property {
+  margin-bottom: rem-calc(5);
+  font-size: rem-calc(13);
+  line-height: unitless-calc(24, 13);
+  color: #7f7f7f;
+}
+.order-item-value,
+.order-total {
+  font-size: rem-calc(20);
+  line-height: unitless-calc(24, 20);
+}
+.order-item-value {
+  font-weight: 600;
+}
+.amount-counter {
+  max-width: rem-calc(151);
+  &:after {
+    content: 'шт.';
+    position: absolute;
+    top: 50%;
+    right: rem-calc(40);
+    margin-top: rem-calc(-11);
+  }
+}
+.order-total {
+  margin-bottom: rem-calc(40);
+  font-weight: $global-weight-bold;
+}
+.order-form {
+  max-width: none;
+}

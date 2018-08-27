@@ -97,6 +97,13 @@
   .map {
     height: rem-calc(360);
   }
+  .order-item {
+    flex-direction: column;
+    padding: rem-calc(10);
+  }
+  .order-picture {
+    max-width: none;
+  }
 }
 
 @include breakpoint(large) {
@@ -393,6 +400,34 @@
   .map {
     height: rem-calc(465);
   }
+  .order-item {
+    flex-direction: row;
+    align-items: center;
+    padding: rem-calc(10 30 10 10);
+    height: auto;
+  }
+  .order-picture {
+    width: rem-calc(150);
+  }
+  .order-item-feature {
+    flex: 1 0 auto;
+    padding-left: rem-calc(40);
+    min-height: rem-calc(70);
+    .order-item-value {
+      margin-top: rem-calc(15);
+    }
+  }
+  .order-close-button {
+    top: rem-calc(4);
+    right: rem-calc(10);
+    bottom: auto;
+  }
+  .order-total {
+    margin-bottom: rem-calc(70);
+  }
+  .order-form {
+    margin-bottom: rem-calc(57);
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -594,6 +629,25 @@
         text-align: left;
       }
     }
+  }
+  .order-picture-wrapper {
+    &:first-child {
+      padding-right: 0;
+      padding-bottom: rem-calc(20);
+    }
+  }
+  .order-item {
+    .media-object-section {
+      padding-bottom: rem-calc(20);
+    }
+    .order-item-feature {
+      &:last-of-type {
+        padding-bottom: rem-calc(10);
+      }
+    }
+  }
+  .order-item-price {
+    margin-top: auto;
   }
 }
 

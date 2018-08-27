@@ -368,22 +368,22 @@ $card-padding: rem-calc(20);
 $card-margin-bottom: rem-calc(10);
 // 15. Close Button
 // ----------------
-$closebutton-position: right top;
+$closebutton-position: right bottom;
 $closebutton-offset-horizontal: (
-  small: 0.66rem,
-  medium: 1rem
+  small: rem-calc(10),
+  medium: rem-calc(10)
 );
 $closebutton-offset-vertical: (
-  small: 0.33em,
-  medium: 0.5rem
+  small: rem-calc(15),
+  medium: rem-calc(15)
 );
 $closebutton-size: (
-  small: 1.5em,
-  medium: 2em
+  small: rem-calc(30),
+  medium: rem-calc(36)
 );
 $closebutton-lineheight: 1;
-$closebutton-color: $dark-gray;
-$closebutton-color-hover: $black;
+$closebutton-color: $black;
+$closebutton-color-hover: $dark-gray;
 // 16. Drilldown
 // -------------
 $drilldown-transition: transform 0.15s linear;
@@ -464,7 +464,7 @@ $input-shadow: none;
 $input-shadow-focus: none;
 $input-cursor-disabled: not-allowed;
 $input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
-$input-number-spinners: true;
+$input-number-spinners: false;
 $input-radius: $global-radius;
 $form-button-radius: $global-radius;
 // 21. Label

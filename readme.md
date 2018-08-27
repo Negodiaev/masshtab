@@ -14,6 +14,7 @@
 - [Reviews | Отзывы](https://negodiaev.github.io/masshtab/reviews.html)
 - [About | О компании](https://negodiaev.github.io/masshtab/about.html)
 - [Contacts | Контакты](https://negodiaev.github.io/masshtab/contacts.html)
+- [Order | Корзина](https://negodiaev.github.io/masshtab/order.html)
 
 ---
 

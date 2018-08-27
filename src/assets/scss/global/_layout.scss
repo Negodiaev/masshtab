@@ -139,3 +139,11 @@
     line-height: unitless-calc(24, 15);
   }
 }
+.counter {
+  position: relative;
+  display: flex;
+  font-size: rem-calc(20);
+  line-height: unitless-calc(24, 20);
+  font-weight: 600;
+  background-color: $super-light-gray;
+}

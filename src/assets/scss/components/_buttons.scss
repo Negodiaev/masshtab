@@ -148,3 +148,30 @@
   margin-bottom: rem-calc(10);
   box-shadow: 0 0 2px rgba(151, 155, 171, 0.44);
 }
+.order-close-button {
+  font-weight: 300;
+}
+.counter-button {
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-width: auto;
+  font-size: rem-calc(25);
+  line-height: rem-calc(24, 25);
+  user-select: none;
+  color: $body-font-color;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    color: $body-font-color;
+  }
+  &:hover {
+    background-color: $light-gray;
+  }
+  &:focus {
+    background-color: transparent;
+    &:hover {
+      background-color: $light-gray;
+    }
+  }
+}

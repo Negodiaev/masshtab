@@ -189,3 +189,23 @@
     }
   }
 }
+.counter-input {
+  margin-bottom: 0;
+  border: 0;
+  padding: rem-calc(5 45 5 0);
+  height: rem-calc(42);
+  font-size: rem-calc(20);
+  line-height: unitless-calc(24, 20);
+  font-weight: 600;
+  text-align: center;
+  user-select: none;
+  background-color: transparent;
+  &[readonly] {
+    background-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    border: 0;
+    background-color: transparent;
+  }
+}
