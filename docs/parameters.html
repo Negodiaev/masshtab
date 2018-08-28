@@ -6,12 +6,12 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>О компании | Масштаб</title>
+  <title>Типоразмер | Масштаб</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" media="all and (min-width: 960px)">
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
 
-<body class="about page">
+<body class="parameters page">
 
   <div class="sticky-footer">
     <header class="header">
@@ -80,7 +80,7 @@
   <!-- /.navigation -->
 </header>
 <!-- /.header --> 
-<main class="main white">
+<main class="main">
   <div class="grid-container">
     <ul class="breadcrumbs">
       <li>
@@ -95,53 +95,77 @@
     </ul>
   </div>
   <!-- /.grid-container -->  <div class="grid-container">
-    <div class="content-block">
-      <img src="assets/img/about/main.jpg" alt="">
-    </div>
+    <h1 class="h2">Заголовок товара с типоразмером</h1>
   </div>
   <!-- /.grid-container -->
-  <div class="about-content section">
-    <div class="content grid-container">
+  <div class="parameters-section">
+    <div class="grid-container">
+      <div id="parameters-gallery" class="parameters-gallery content-card content-block swiper-container text-center">
+        <div class="swiper-wrapper">
+          <div class="parameters-gallery-slide swiper-slide">
+            <img src="assets/img/parameters/1.jpg" alt="">
+          </div>
+          <div class="parameters-gallery-slide swiper-slide">
+            <img src="assets/img/parameters/2.jpg" alt="">
+          </div>
+        </div>
+        <!-- /.swiper-wrapper -->
+        <div id="parameters-gallery-next" class="parameters-gallery-control parameters-gallery-next">
+          <svg class="icon" width="50" height="67">
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </div>
+        <div id="parameters-gallery-prev" class="parameters-gallery-control parameters-gallery-prev">
+          <svg class="icon" width="50" height="67">
+            <use xlink:href="#arrow-left"></use>
+          </svg>
+        </div>
+      </div>
+      <!-- /.parameters-gallery -->
       <div class="grid-x grid-padding-x">
-        <div class="cell medium-6 medium-order-2 large-5">
-          <div class="about-info">
-            <p>Масштаб, семейная компания, за 16 лет работы на рынке приобрела значительный опыт в проектировании и организации
-              производства инженерно-технической продукции.</p>
-            <p>На сегодняшний день Масштаб является производителем станочной оснастки от самого компактного кулачка до специального
-              патрона для зажима шестерен. </p>
-            <p>В нашем арсенале продуктов присутствуют как стандартные изделия, так и специальные изделия с прецизионной
-              точностью.</p>
-            <p>Мы проектируем и разрабатываем технологии с заделом на будущее, в котором следует ожидать стремительного прогресса
-              во многих отраслях.</p>
+        <div class="parameters-block cell large-7">
+          <div class="draft parameters-block-content content-card content-block text-center">
+            <img src="assets/img/parameters/draft.jpg" alt="">
           </div>
         </div>
         <!-- /.cell -->
-        <div class="cell medium-6 medium-order-1 large-4">
-          <img src="assets/img/about/text-1.jpg" alt="">
-        </div>
-        <!-- /.cell -->
-        <div class="cell medium-order-3 large-3">
-          <aside class="sidebar">
-            <ul class="inner-pages-navigation pages-navigation vertical menu">
-              <li class="active">
-                <a href="#">О компании</a>
-              </li>
-              <li>
-                <a href="#">Производственные площадки</a>
-              </li>
-              <li>
-                <a href="#">Философия</a>
-              </li>
-              <li>
-                <a href="#">Отзывы</a>
-              </li>
-              <li>
-                <a href="#">Проекты</a>
-              </li>
-            </ul>
-            <!-- /.pages-navigation -->
-          </aside>
-          <!-- /.sidebar -->
+        <div class="parameters-block cell large-5">
+          <div class="parameters-details parameters-block-content filter-card content-card content-block">
+            <table class="parameters-table filter-table">
+              <thead>
+                <tr>
+                  <th>Наименование</th>
+                  <th>Параметр</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Полное наименование</td>
+                  <td>1 568</td>
+                </tr>
+                <tr>
+                  <td>Заголовок товара</td>
+                  <td>24 480</td>
+                </tr>
+                <tr>
+                  <td>Наименование</td>
+                  <td>550</td>
+                </tr>
+                <tr>
+                  <td>Описание товара</td>
+                  <td>1 568</td>
+                </tr>
+                <tr>
+                  <td>Заголовок товара</td>
+                  <td>1 568</td>
+                </tr>
+                <tr>
+                  <td>Наименование</td>
+                  <td>24 480</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
         <!-- /.cell -->
       </div>
@@ -149,167 +173,7 @@
     </div>
     <!-- /.grid-container -->
   </div>
-  <!-- /.about-content -->
-  <div class="clients section light">
-    <div class="grid-container">
-      <h1 class="clients-title h2">Среди наших клиентов</h1>
-      <div class="clients-blocks blocks grid-x grid-padding-x medium-up-2 xlarge-up-4">
-        <div class="blocks-cell cell">
-          <div class="clients-card blocks-card card">
-            <div class="clients-card-picture card-picture card-section">
-              <svg class="icon" width="102" height="102"><use xlink:href="#machine"></use></svg>
-            </div>
-            <div class="clients-card-info card-info card-section">
-              <p>Предприятия станкостроительной отрасли</p>
-            </div>
-          </div>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <div class="clients-card blocks-card card">
-            <div class="clients-card-picture card-picture card-section">
-              <svg class="icon" width="81" height="93"><use xlink:href="#shield"></use></svg>
-            </div>
-            <div class="clients-card-info card-info card-section">
-              <p>Предприятия оборонного комплекса</p>
-            </div>
-          </div>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <div class="clients-card blocks-card card">
-            <div class="clients-card-picture card-picture card-section">
-              <svg class="icon" width="92" height="98"><use xlink:href="#robot"></use></svg>
-            </div>
-            <div class="clients-card-info card-info card-section">
-              <p>Специалисты по робототехнике, автоматике</p>
-            </div>
-          </div>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <div class="clients-card blocks-card card">
-            <div class="clients-card-picture card-picture card-section">
-              <svg class="icon" width="70" height="86"><use xlink:href="#microscope"></use></svg>
-            </div>
-            <div class="clients-card-info card-info card-section">
-              <p>Научно-исследовательские институты</p>
-            </div>
-          </div>
-        </div>
-        <!-- /.cell -->
-      </div>
-      <!-- /.clients-blocks -->
-    </div>
-    <!-- /.grid-container -->
-  </div>
-  <!-- /.clients -->
-  <div class="activities section white">
-    <div class="grid-container" data-equalizer="activities-card-title" data-equalize-on="medium">
-      <h2 class="activities-title h2">Основные направления нашей деятельности</h2>
-      <div class="activities-blocks blocks grid-x grid-padding-x medium-up-2 large-up-3" data-equalizer="activities-card-info" data-equalize-on="medium">
-        <div class="blocks-cell cell">
-          <div class="activities-card blocks-card card align-right">
-            <div class="activities-card-title card-section title bordered primary-light h4 text-center" data-equalizer-watch="activities-card-title">Собственный производственный
-              участок
-              <a href="#">металлообработки</a>
-              <div class="activities-card-subtitle subtitle">г. Пермь</div>
-            </div>
-            <div class="activities-card-info card-info card-section" data-equalizer-watch="activities-card-info">
-              <p>Для выполнения срочных работ по восстановлению, доработке и производству запчастей, комплектующих и оснастки.</p>
-            </div>
-          </div>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <div class="activities-card blocks-card card align-right">
-            <div class="activities-card-title card-section title bordered primary-light h4 text-center" data-equalizer-watch="activities-card-title">Группа конструкторов
-              <div class="activities-card-subtitle subtitle">г. Челябинск</div>
-            </div>
-            <div class="activities-card-info card-info card-section" data-equalizer-watch="activities-card-info">
-              <p>Разработчиков с широким парком <a href="#">высокоточного современного оборудования</a></p>
-            </div>
-          </div>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <div class="activities-card blocks-card card align-right">
-            <div class="activities-card-title card-section title bordered primary-light h4 text-center" data-equalizer-watch="activities-card-title">Участок переточки
-              инструмента
-              <div class="activities-card-subtitle subtitle">г. Пермь</div>
-            </div>
-            <div class="activities-card-info card-info card-section" data-equalizer-watch="activities-card-info">
-              <p>Возможность оперативно восстановить твердосплавный инструмент с минимальными затратами.</p>
-            </div>
-          </div>
-        </div>
-        <!-- /.cell -->
-      </div>
-      <!-- /.activities-blocks -->
-    </div>
-    <!-- /.grid-container -->
-  </div>
-  <!-- /.activities -->
-  <div class="production section light">
-    <div class="grid-container">
-      <h1 class="production-title h2">Производимая продукция</h1>
-      <div class="production-blocks blocks grid-x grid-padding-x medium-up-2 xlarge-up-4">
-        <div class="blocks-cell cell">
-          <div class="production-object custom-object media-object blocks-card align-middle">
-            <div class="media-object-section">
-              <div class="number-picture custom-object-picture">1</div>
-            </div>
-            <div class="production-object-info media-object-section">
-              <a href="#">Оснастка инструментальная</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <div class="production-object custom-object media-object blocks-card align-middle">
-            <div class="media-object-section">
-              <div class="number-picture custom-object-picture">2</div>
-            </div>
-            <div class="production-object-info media-object-section">
-              <a href="#">Оснастка крепежная</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <div class="production-object custom-object media-object blocks-card align-middle">
-            <div class="media-object-section">
-              <div class="number-picture custom-object-picture">3</div>
-            </div>
-            <div class="production-object-info media-object-section">
-              <a href="#">Инструмент металлорежущий</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.cell -->
-        <div class="blocks-cell cell">
-          <div class="production-object custom-object media-object blocks-card align-middle">
-            <div class="media-object-section">
-              <div class="number-picture custom-object-picture">4</div>
-            </div>
-            <div class="production-object-info media-object-section">
-              <a href="#">Комплектующие для токарных патронов</a>
-            </div>
-          </div>
-        </div>
-        <!-- /.cell -->
-      </div>
-      <!-- /.production-blocks -->
-      <div class="notice flex-container align-top">
-        <div class="notice-picture text-center">
-          <svg class="icon" width="6" height="28"><use xlink:href="#info"></use></svg>
-        </div>
-        <p class="notice-info">Средний срок производства того или иного продукта варьируется от 1 до 4 недель в зависимости от загруженности производства. <br>Продукция производиться в полном соответствии чертежам и государственным стандартам качества.</p>
-      </div>
-    </div>
-    <!-- /.grid-container -->
-  </div>
-  <!-- /.production -->
+  <!-- /.parameters-section -->
 </main>
 <!-- /.main -->
  <footer class="footer">

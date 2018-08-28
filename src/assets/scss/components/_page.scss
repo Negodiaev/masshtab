@@ -275,3 +275,30 @@
 .order-form {
   max-width: none;
 }
+.draft {
+  padding: rem-calc(10);
+}
+.parameters-table {
+  margin-bottom: rem-calc(3);
+  th,
+  td {
+    &:last-child {
+      text-align: left;
+    }
+  }
+  th {
+    padding-top: rem-calc(29);
+    padding-bottom: rem-calc(42);
+    font-size: rem-calc(15);
+    line-height: unitless-calc(20, 15);
+    font-weight: 600;
+    color: $body-font-color;
+    &:first-child {
+      color: $primary-color;
+    }
+  }
+  td {
+    padding-top: rem-calc(21);
+    padding-bottom: rem-calc(21);
+  }
+}

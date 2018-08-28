@@ -58,3 +58,29 @@
 .project-gallery-next {
   right: 0;
 }
+
+.parameters-gallery-slide {
+  padding-top: rem-calc(10);
+  padding-bottom: rem-calc(10);
+}
+.parameters-gallery-control {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  cursor: pointer;
+  color: #b6b6b6;
+  transform: translateY(-50%);
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: $primary-color;
+  }
+  .icon {
+    outline-color: transparent;
+  }
+}
+.parameters-gallery-prev {
+  left: 10px;
+}
+.parameters-gallery-next {
+  right: 10px;
+}

@@ -137,7 +137,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     openInNew: 'Открыть в новом окне'
   };
 
-  //Counter
+  // counter
   var increments = document.querySelectorAll('.counter-button.plus'),
     decrements = document.querySelectorAll('.counter-button.minus'),
     i;
@@ -168,7 +168,33 @@ document.addEventListener('DOMContentLoaded', function(event) {
     });
   }
 
-  //Project gallery
+  // parameters gallery
+  var parametersGallery = new Swiper('#parameters-gallery', {
+    loop: true,
+    autoHeight: true,
+    lazy: {
+      loadPrevNext: true
+    },
+    // effect: 'fade',
+    fadeEffect: {
+      // crossFade: true
+    },
+    navigation: {
+      nextEl: '#parameters-gallery-next',
+      prevEl: '#parameters-gallery-prev'
+    }
+  });
+
+  // lightbox
+  //Translate - set before any binding
+  WAMediaBox.lang = {
+    prev: 'Назад',
+    next: 'Вперёд',
+    close: 'Закрыть',
+    openInNew: 'Открыть в новом окне'
+  };
+
+  // project gallery
   var projectGallery = new Swiper('#project-gallery-main', {
     // spaceBetween: 10,
     lazy: {
