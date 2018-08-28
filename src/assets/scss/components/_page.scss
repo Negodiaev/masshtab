@@ -302,3 +302,55 @@
     padding-bottom: rem-calc(21);
   }
 }
+.error-card {
+  padding: rem-calc(40 10);
+  font-size: rem-calc(15);
+  line-height: unitless-calc(24, 15);
+  p {
+    line-height: unitless-calc(24, 15);
+  }
+}
+.error-picture {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: rem-calc(372);
+  svg {
+    width: 100%;
+  }
+}
+.error-title {
+  font-size: rem-calc(96);
+  line-height: 1;
+  font-weight: 300;
+}
+.error-message {
+  margin-bottom: rem-calc(40);
+  line-height: unitless-calc(24, 19);
+}
+.searchbar {
+  position: relative;
+  input {
+    padding: rem-calc(21 70 22 24);
+    height: rem-calc(69);
+    border: 1px solid #8c8c8c;
+    font-size: rem-calc(15);
+    line-height: unitless-calc(24, 15);
+  }
+}
+.searchbar-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  min-width: rem-calc(70);
+  width: rem-calc(70);
+  height: 100%;
+  text-align: center;
+  color: $primary-dark;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    color: $primary-dark;
+    background-color: transparent;
+  }
+}

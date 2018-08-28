@@ -17,6 +17,8 @@
 - [Order | Корзина](https://negodiaev.github.io/masshtab/order.html)
 - [Places | Производственные площадки](https://negodiaev.github.io/masshtab/places.html)
 - [Philosophy | Философия](https://negodiaev.github.io/masshtab/philosophy.html)
+- [Parameters | Типоразмер](https://negodiaev.github.io/masshtab/parameters.html)
+- [404](https://negodiaev.github.io/masshtab/error-page.html)
 
 ---
 

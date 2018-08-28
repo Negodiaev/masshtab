@@ -117,6 +117,21 @@
   .draft {
     padding: rem-calc(20);
   }
+  .error-card {
+    padding: rem-calc(80 20);
+    p {
+      margin-bottom: rem-calc(18);
+    }
+    .error-message {
+      margin-bottom: rem-calc(60);
+    }
+  }
+  .error-picture {
+    margin-bottom: 0;
+  }
+  .error-title {
+    margin-bottom: rem-calc(20);
+  }
 }
 
 @include breakpoint(large) {
@@ -474,6 +489,20 @@
     align-items: center;
     margin-bottom: 0;
     height: 100%;
+  }
+  .error-card {
+    padding: rem-calc(137 70 138);
+    .error-message {
+      margin-bottom: rem-calc(60);
+      font-size: rem-calc(19);
+    }
+  }
+  .error-content {
+    padding-top: rem-calc(74);
+    padding-bottom: rem-calc(94);
+  }
+  .error-title {
+    font-size: rem-calc(128);
   }
 }
 

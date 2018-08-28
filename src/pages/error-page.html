@@ -1,0 +1,43 @@
+---
+layout: index
+meta-title: 404
+---
+
+<main class="main">
+  <div class="error-content section light">
+    <div class="grid-container">
+      <div class="error-card content-card section">
+        <div class="grid-container full">
+          <div class="grid-x grid-padding-x align-middle">
+            <div class="cell medium-5 large-6">
+              <div class="error-picture content-block text-center">
+                {{> error-picture}}
+              </div>
+            </div>
+            <!-- /.cell -->
+            <div class="cell medium-7 large-6">
+              <h1 class="error-title h1">404</h1>
+              <p class="error-message lead">Ой, вы попали на страницу <br>которой нет на нашем сайте.</p>
+              <p class="search-message">Пожалуйста, воспользуйтесь поиском, <br>чтобы найти то что есть:</p>
+              <div class="searchbar">
+                <form>
+                  <input type="text" placeholder="Введите запрос">
+                  <button type="submit" class="searchbar-button button">
+                    <svg class="icon" width="27" height="28"><use xlink:href="#magnifier"></use></svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <!-- /.cell -->
+          </div>
+          <!-- /.grid-x -->
+        </div>
+        <!-- /.grid-container -->
+      </div>
+      <!-- /.content-card -->
+    </div>
+    <!-- /.grid-container -->
+  </div>
+  <!-- /.section -->
+</main>
+<!-- /.main -->
